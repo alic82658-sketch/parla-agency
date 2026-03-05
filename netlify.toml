@@ -1,0 +1,65 @@
+[build]
+  command = "echo 'Build complete'"
+  publish = "."
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# ============== SECURITY HEADERS ==============
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Protection contre le clickjacking
+    X-Frame-Options = "SAMEORIGIN"
+    
+    # Protection contre MIME-sniffing
+    X-Content-Type-Options = "nosniff"
+    
+    # Protection XSS (legacy, modern browsers utilisent CSP)
+    X-XSS-Protection = "1; mode=block"
+    
+    # Politique de referer
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    
+    # Content Security Policy - critique pour sécurité
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://consent.cookiebot.com https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://consent.cookiebot.com https://www.google-analytics.com; frame-src 'self';"
+    
+    # Forcer HTTPS
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    
+    # Permissions Policy (remplace Feature Policy)
+    Permissions-Policy = "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
+
+# ============== CACHING ==============
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# ============== COMPRESSION ==============
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Encoding = "gzip"
