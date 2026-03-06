@@ -1,718 +1,198 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Parla | Chatbot WhatsApp pour restaurants à Dakar</title>
-  <meta
-    name="description"
-    content="Parla aide les restaurants, Fast-food & Traiteurs à répondre automatiquement sur WhatsApp : menu, prix, livraison, horaires, commandes et transfert à un humain. Installation à distance."
-  />
-  <meta
-    name="keywords"
-    content="chatbot whatsapp restaurant, automatisation whatsapp restaurant, bot whatsapp dakar, assistant whatsapp restaurant, menu whatsapp restaurant"
-  />
-  <meta name="author" content="Parla" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://parla.africa/" />
+<title>Parla – Répondez à vos clients WhatsApp 24h/24</title>
 
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Parla | Votre WhatsApp prend des commandes 24/7" />
-  <meta
-    property="og:description"
-    content="Menu, prix, livraison, horaires : Parla répond automatiquement aux clients des restaurants sur WhatsApp."
-  />
-  <meta property="og:url" content="https://parla.africa/" />
-  <meta property="og:image" content="https://parla.africa/og-image.jpg" />
+<style>
 
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Parla | Chatbot WhatsApp pour restaurants" />
-  <meta
-    name="twitter:description"
-    content="Automatisez les messages WhatsApp de votre restaurant : menu, livraison, commandes et réponses instantanées."
-  />
+body{
+font-family:Arial,Helvetica,sans-serif;
+margin:0;
+background:#f8fafc;
+color:#1e293b;
+}
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
+.container{
+max-width:1100px;
+margin:auto;
+padding:40px 20px;
+}
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              50: '#ecfeff',
-              100: '#cffafe',
-              500: '#00d9d9',
-              600: '#00b8b8',
-              700: '#009696',
-              900: '#0f172a'
-            }
-          },
-          fontFamily: {
-            sans: ['Inter', 'sans-serif']
-          },
-          boxShadow: {
-            soft: '0 10px 30px rgba(15, 23, 42, 0.08)',
-            brand: '0 12px 35px rgba(0, 217, 217, 0.22)'
-          }
-        }
-      }
-    }
-  </script>
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+flex-wrap:wrap;
+}
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Parla",
-    "applicationCategory": "BusinessApplication",
-    "operatingSystem": "Web",
-    "url": "https://parla.africa/",
-    "description": "Assistant WhatsApp pour restaurants : réponses automatiques, menu, livraison, commandes et transfert à un humain.",
-    "offers": {
-      "@type": "AggregateOffer",
-      "priceCurrency": "XOF",
-      "lowPrice": "29000",
-      "highPrice": "89000"
-    }
-  }
-  </script>
+.hero-text{
+max-width:520px;
+}
 
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"FAQPage",
-    "mainEntity":[
-      {
-        "@type":"Question",
-        "name":"Combien de temps faut-il pour installer Parla ?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"L'installation se fait à distance. La configuration initiale prend généralement entre 24 et 48 heures selon le menu, les réponses et les scénarios à mettre en place."
-        }
-      },
-      {
-        "@type":"Question",
-        "name":"Est-ce que Parla remplace totalement mon équipe ?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"Non. Parla traite surtout les questions répétitives comme le menu, les horaires, la livraison ou les demandes simples. Les demandes importantes peuvent être transférées à votre équipe."
-        }
-      },
-      {
-        "@type":"Question",
-        "name":"Parla fonctionne-t-il avec WhatsApp Business ?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"Oui. Parla est conçu pour s'intégrer à un usage professionnel de WhatsApp afin d'automatiser les réponses client et de fluidifier la prise de commande."
-        }
-      }
-    ]
-  }
-  </script>
+h1{
+font-size:42px;
+line-height:1.2;
+}
+
+.highlight{
+color:#22c55e;
+}
+
+button{
+background:#22c55e;
+border:none;
+color:white;
+padding:16px 24px;
+font-size:16px;
+border-radius:8px;
+cursor:pointer;
+}
+
+button:hover{
+opacity:0.9;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:60px;
+}
+
+.card{
+background:white;
+padding:24px;
+border-radius:12px;
+box-shadow:0 4px 12px rgba(0,0,0,0.05);
+}
+
+.section-title{
+text-align:center;
+margin-top:80px;
+}
+
+.price{
+text-align:center;
+font-size:40px;
+color:#22c55e;
+margin-top:20px;
+}
+
+footer{
+text-align:center;
+margin-top:80px;
+padding:30px;
+color:#64748b;
+}
+
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:16px 20px;
+border-radius:50px;
+font-weight:bold;
+text-decoration:none;
+box-shadow:0 6px 20px rgba(0,0,0,0.2);
+}
+
+</style>
+
 </head>
 
-<body class="bg-white text-slate-800 antialiased">
-  <!-- Header -->
-  <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur">
-    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-      <a href="#" class="flex items-center gap-2 text-xl font-extrabold tracking-tight text-slate-900">
-        <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-brand-500/15 text-brand-700">💬</span>
-        Parla
-      </a>
+<body>
 
-      <nav class="hidden items-center gap-8 md:flex">
-        <a href="#fonctionnement" class="text-sm font-medium text-slate-600 transition hover:text-slate-900">Fonctionnement</a>
-        <a href="#benefices" class="text-sm font-medium text-slate-600 transition hover:text-slate-900">Bénéfices</a>
-        <a href="#tarifs" class="text-sm font-medium text-slate-600 transition hover:text-slate-900">Tarifs</a>
-        <a href="#faq" class="text-sm font-medium text-slate-600 transition hover:text-slate-900">FAQ</a>
-      </nav>
+<div class="container">
 
-      <a
-        href="https://wa.me/221774952105?text=Bonjour%20Parla%2C%20je%20veux%20tester%20la%20d%C3%A9mo%20restaurant"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2.5 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-slate-800"
-      >
-        Tester sur WhatsApp
-      </a>
-    </div>
-  </header>
+<div class="hero">
 
-  <main>
-    <!-- Hero -->
-    <section class="relative overflow-hidden">
-      <div class="absolute inset-0 bg-gradient-to-b from-brand-50 via-white to-white"></div>
-      <div class="relative mx-auto grid max-w-7xl gap-14 px-4 py-16 sm:px-6 md:py-20 lg:grid-cols-2 lg:items-center lg:px-8 lg:py-24">
-        <div>
-          <div class="mb-5 inline-flex items-center rounded-full border border-brand-100 bg-brand-50 px-3 py-1 text-sm font-semibold text-brand-700">
-            Pour restaurants, fast-foods et traiteurs
-          </div>
+<div class="hero-text">
 
-          <h1 class="max-w-2xl text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
-            Votre WhatsApp prend des commandes et répond aux clients
-            <span class="text-brand-700">24h/24</span>
-          </h1>
+<p style="color:#22c55e;font-weight:bold;">
+Pour restaurants, fast-foods et traiteurs
+</p>
 
-          <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-            Menu, prix, livraison, horaires, adresse, questions fréquentes : Parla répond instantanément sur WhatsApp
-            et transfère à votre équipe quand c’est nécessaire.
-          </p>
+<h1>
+Votre WhatsApp répond aux clients <span class="highlight">24h/24</span>
+</h1>
 
-          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-            <a
-              href="https://wa.me/221774952105?text=Bonjour%20Parla%2C%20je%20veux%20tester%20la%20d%C3%A9mo%20restaurant"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="inline-flex items-center justify-center rounded-xl bg-brand-500 px-6 py-3.5 text-base font-bold text-slate-900 shadow-brand transition hover:-translate-y-0.5 hover:bg-brand-600"
-            >
-              Tester sur WhatsApp
-            </a>
-            <a
-              href="#fonctionnement"
-              class="inline-flex items-center justify-center rounded-xl border border-slate-300 px-6 py-3.5 text-base font-semibold text-slate-700 transition hover:border-slate-400 hover:bg-slate-50"
-            >
-              Voir comment ça marche
-            </a>
-          </div>
+<p>
+Parla répond automatiquement aux messages WhatsApp de vos clients :
+menu, prix, livraison, horaires et commandes.
+</p>
 
-          <div class="mt-8 grid gap-3 sm:grid-cols-3">
-            <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-soft">
-              <p class="text-sm font-semibold text-slate-900">Installation à distance</p>
-              <p class="mt-1 text-sm text-slate-600">Simple, sans déplacement</p>
-            </div>
-            <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-soft">
-              <p class="text-sm font-semibold text-slate-900">Réponse immédiate</p>
-              <p class="mt-1 text-sm text-slate-600">Même quand vous êtes occupé</p>
-            </div>
-            <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-soft">
-              <p class="text-sm font-semibold text-slate-900">Support humain</p>
-              <p class="mt-1 text-sm text-slate-600">Par WhatsApp après installation</p>
-            </div>
-          </div>
-        </div>
+<a href="https://wa.me/221774952105">
+<button>Tester sur WhatsApp</button>
+</a>
 
-        <div class="relative">
-          <div class="mx-auto max-w-md rounded-[2rem] border border-slate-200 bg-white p-4 shadow-soft">
-            <div class="rounded-[1.5rem] bg-slate-950 p-3">
-              <div class="rounded-[1.2rem] bg-[#efeae2] p-4">
-                <div class="mb-4 flex items-center gap-3">
-                  <div class="h-10 w-10 rounded-full bg-brand-500/20"></div>
-                  <div>
-                    <p class="text-sm font-bold text-slate-900">Parla Demo</p>
-                    <p class="text-xs text-slate-500">En ligne</p>
-                  </div>
-                </div>
+</div>
 
-                <div class="space-y-3 text-sm">
-                  <div class="max-w-[85%] rounded-2xl rounded-bl-sm bg-white px-4 py-3 text-slate-700 shadow">
-                    Bonjour, vous avez le menu ?
-                  </div>
+</div>
 
-                  <div class="ml-auto max-w-[85%] rounded-2xl rounded-br-sm bg-brand-500 px-4 py-3 font-medium text-slate-900 shadow">
-                    Bonjour 👋 Voici notre menu du jour :
-                    <br><br>
-                    1️⃣ Poulet braisé – 3 500 CFA
-                    <br>
-                    2️⃣ Yassa poulet – 3 000 CFA
-                    <br>
-                    3️⃣ Sandwich – 2 000 CFA
-                  </div>
+<div class="features">
 
-                  <div class="max-w-[85%] rounded-2xl rounded-bl-sm bg-white px-4 py-3 text-slate-700 shadow">
-                    Je prends 2 poulets braisés
-                  </div>
+<div class="card">
+<h3>Réponse instantanée</h3>
+<p>
+Vos clients reçoivent une réponse en moins de 3 secondes.
+</p>
+</div>
 
-                  <div class="ml-auto max-w-[85%] rounded-2xl rounded-br-sm bg-brand-500 px-4 py-3 font-medium text-slate-900 shadow">
-                    Parfait 👍
-                    <br>
-                    Quel est votre quartier pour la livraison ?
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+<div class="card">
+<h3>Disponible 24h/24</h3>
+<p>
+Parla répond même quand votre restaurant est fermé.
+</p>
+</div>
 
-          <div class="mt-5 text-center text-sm text-slate-500">
-            Démo de conversation type restaurant
-          </div>
-        </div>
-      </div>
-    </section>
+<div class="card">
+<h3>Installation simple</h3>
+<p>
+Mise en place rapide sans installation compliquée.
+</p>
+</div>
 
-    <!-- Proof strip -->
-    <section class="border-y border-slate-200 bg-slate-50">
-      <div class="mx-auto grid max-w-7xl gap-6 px-4 py-6 text-center sm:grid-cols-3 sm:px-6 lg:px-8">
-        <div>
-          <p class="text-2xl font-extrabold text-slate-900">&lt; 3 sec</p>
-          <p class="text-sm text-slate-600">pour répondre aux demandes simples</p>
-        </div>
-        <div>
-          <p class="text-2xl font-extrabold text-slate-900">24h/24</p>
-          <p class="text-sm text-slate-600">pour envoyer menu, horaires et infos</p>
-        </div>
-        <div>
-          <p class="text-2xl font-extrabold text-slate-900">48h</p>
-          <p class="text-sm text-slate-600">pour une mise en place standard</p>
-        </div>
-      </div>
-    </section>
+</div>
 
-    <!-- Problem -->
-    <section class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-3xl text-center">
-        <p class="text-sm font-bold uppercase tracking-[0.18em] text-brand-700">Le vrai problème</p>
-        <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
-          Vous perdez des commandes quand vous ne répondez pas assez vite
-        </h2>
-        <p class="mt-5 text-lg leading-8 text-slate-600">
-          Beaucoup de restaurants répondent encore manuellement aux mêmes messages toute la journée.
-          Résultat : fatigue, délais de réponse, clients perdus et service irrégulier.
-        </p>
-      </div>
+<h2 class="section-title">
+Le problème
+</h2>
 
-      <div class="mt-12 grid gap-6 md:grid-cols-3">
-        <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-soft">
-          <div class="text-3xl">📋</div>
-          <h3 class="mt-4 text-xl font-bold text-slate-900">On vous demande le menu sans arrêt</h3>
-          <p class="mt-3 text-slate-600">
-            “Envoyez le menu”, “C’est combien ?”, “Vous livrez ?” : les mêmes questions reviennent en boucle.
-          </p>
-        </div>
+<p style="text-align:center;max-width:700px;margin:auto;">
+Beaucoup de restaurants perdent des commandes parce qu'ils répondent trop tard sur WhatsApp ou Instagram.
+Parla répond automatiquement et ne laisse plus aucun client sans réponse.
+</p>
 
-        <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-soft">
-          <div class="text-3xl">⏳</div>
-          <h3 class="mt-4 text-xl font-bold text-slate-900">Les clients n’aiment pas attendre</h3>
-          <p class="mt-3 text-slate-600">
-            Si vous répondez trop tard, une partie des clients passe simplement à un autre restaurant.
-          </p>
-        </div>
+<h2 class="section-title">
+Tarif simple
+</h2>
 
-        <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-soft">
-          <div class="text-3xl">📱</div>
-          <h3 class="mt-4 text-xl font-bold text-slate-900">Votre téléphone vous coupe dans tout</h3>
-          <p class="mt-3 text-slate-600">
-            Cuisine, service, livraison, caisse : répondre à chaque message ralentit votre équipe au lieu de l’aider.
-          </p>
-        </div>
-      </div>
-    </section>
+<div class="price">
+49 000 CFA / mois
+</div>
 
-    <!-- How it works -->
-    <section id="fonctionnement" class="bg-slate-50 py-20">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="mx-auto max-w-3xl text-center">
-          <p class="text-sm font-bold uppercase tracking-[0.18em] text-brand-700">Fonctionnement</p>
-          <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
-            Parla répond, qualifie et passe la main quand il le faut
-          </h2>
-          <p class="mt-5 text-lg leading-8 text-slate-600">
-            Le but n’est pas de remplacer totalement votre équipe, mais de traiter automatiquement les demandes répétitives
-            pour que vous vous concentriez sur les vraies commandes.
-          </p>
-        </div>
+<p style="text-align:center;">
+Installation incluse • Support WhatsApp
+</p>
 
-        <div class="mt-14 grid gap-6 lg:grid-cols-3">
-          <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-soft">
-            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-500/15 font-extrabold text-brand-700">1</div>
-            <h3 class="mt-5 text-xl font-bold text-slate-900">Le client écrit sur WhatsApp</h3>
-            <p class="mt-3 text-slate-600">
-              Il demande le menu, les prix, les horaires, la livraison ou veut commander directement.
-            </p>
-          </div>
+<footer>
 
-          <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-soft">
-            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-500/15 font-extrabold text-brand-700">2</div>
-            <h3 class="mt-5 text-xl font-bold text-slate-900">Parla répond immédiatement</h3>
-            <p class="mt-3 text-slate-600">
-              Il envoie les bonnes informations, pose les bonnes questions et récupère les détails utiles.
-            </p>
-          </div>
+© 2026 Parla – Tous droits réservés
 
-          <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-soft">
-            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-500/15 font-extrabold text-brand-700">3</div>
-            <h3 class="mt-5 text-xl font-bold text-slate-900">Votre équipe reprend si nécessaire</h3>
-            <p class="mt-3 text-slate-600">
-              Pour les demandes importantes, Parla peut transférer le client à un humain au lieu de bloquer la conversation.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+</footer>
 
-    <!-- Benefits -->
-    <section id="benefices" class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-      <div class="grid gap-12 lg:grid-cols-2 lg:items-start">
-        <div>
-          <p class="text-sm font-bold uppercase tracking-[0.18em] text-brand-700">Ce que Parla gère</p>
-          <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
-            Les demandes les plus fréquentes d’un restaurant
-          </h2>
-          <p class="mt-5 text-lg leading-8 text-slate-600">
-            Parla est pensé pour les restaurants, fast-foods et traiteurs qui reçoivent beaucoup de messages WhatsApp
-            chaque jour.
-          </p>
+</div>
 
-          <div class="mt-8 space-y-4">
-            <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-soft">
-              <h3 class="text-lg font-bold text-slate-900">🍽️ Envoi automatique du menu</h3>
-              <p class="mt-2 text-slate-600">Le client reçoit les plats, les prix et les options sans attendre.</p>
-            </div>
+<a class="whatsapp-float" href="https://wa.me/221774952105">
+💬 WhatsApp
+</a>
 
-            <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-soft">
-              <h3 class="text-lg font-bold text-slate-900">🚚 Questions sur la livraison</h3>
-              <p class="mt-2 text-slate-600">Quartier, disponibilité, horaires, conditions : les réponses partent automatiquement.</p>
-            </div>
-
-            <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-soft">
-              <h3 class="text-lg font-bold text-slate-900">🧾 Pré-prise de commande</h3>
-              <p class="mt-2 text-slate-600">Parla peut demander le plat, la quantité et le quartier avant validation finale par l’équipe.</p>
-            </div>
-
-            <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-soft">
-              <h3 class="text-lg font-bold text-slate-900">👨‍🍳 Passage à un humain</h3>
-              <p class="mt-2 text-slate-600">Votre équipe garde la main sur les cas sensibles, les ruptures ou les demandes spécifiques.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-soft">
-          <p class="text-sm font-bold uppercase tracking-[0.18em] text-brand-700">Démo WhatsApp en 30 secondes</p>
-          <h3 class="mt-3 text-2xl font-extrabold text-slate-900">Ce que voit le restaurateur</h3>
-          <p class="mt-4 text-slate-600">
-            Une démo simple vaut souvent mieux qu’un long discours. C’est la meilleure manière d’expliquer le service.
-          </p>
-
-          <div class="mt-8 space-y-4 rounded-3xl bg-slate-50 p-6">
-            <div class="rounded-2xl bg-white px-4 py-3 text-sm text-slate-700 shadow">
-              Client : “Vous livrez à Ouakam ?”
-            </div>
-            <div class="rounded-2xl bg-brand-500 px-4 py-3 text-sm font-medium text-slate-900 shadow">
-              Oui 👋 Nous livrons à Ouakam aujourd’hui. Souhaitez-vous voir le menu ou commander directement ?
-            </div>
-            <div class="rounded-2xl bg-white px-4 py-3 text-sm text-slate-700 shadow">
-              Client : “Envoyez le menu”
-            </div>
-            <div class="rounded-2xl bg-brand-500 px-4 py-3 text-sm font-medium text-slate-900 shadow">
-              Voici notre menu du jour :
-              <br>• Poulet braisé – 3 500 CFA
-              <br>• Yassa poulet – 3 000 CFA
-              <br>• Sandwich – 2 000 CFA
-            </div>
-          </div>
-
-          <a
-            href="https://wa.me/221774952105?text=Bonjour%20Parla%2C%20je%20veux%20voir%20la%20d%C3%A9mo%20restaurant"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="mt-8 inline-flex w-full items-center justify-center rounded-xl bg-slate-900 px-6 py-3.5 text-base font-bold text-white transition hover:bg-slate-800"
-          >
-            Voir la démo sur WhatsApp
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="bg-slate-50 py-20">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="mx-auto max-w-3xl text-center">
-          <p class="text-sm font-bold uppercase tracking-[0.18em] text-brand-700">Retours clients</p>
-          <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
-            Un service simple à comprendre pour les restaurateurs
-          </h2>
-          <p class="mt-5 text-lg leading-8 text-slate-600">
-            Ici, le plus important est la clarté : montrer ce que Parla fait, et surtout ce qu’il ne prétend pas faire.
-          </p>
-        </div>
-
-        <div class="mt-12 grid gap-6 md:grid-cols-3">
-          <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-soft">
-            <p class="text-yellow-500">★★★★★</p>
-            <p class="mt-4 text-slate-600">
-              “Le plus utile pour nous, c’est l’envoi automatique du menu. On perd moins de temps sur les mêmes questions.”
-            </p>
-            <div class="mt-6">
-              <p class="font-bold text-slate-900">A. Ndiaye</p>
-              <p class="text-sm text-slate-500">Restaurant, Dakar</p>
-            </div>
-          </div>
-
-          <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-soft">
-            <p class="text-yellow-500">★★★★★</p>
-            <p class="mt-4 text-slate-600">
-              “On voulait quelque chose de simple. L’installation s’est faite à distance et on a gardé la main sur les demandes importantes.”
-            </p>
-            <div class="mt-6">
-              <p class="font-bold text-slate-900">M. Sarr</p>
-              <p class="text-sm text-slate-500">Fast-food, Dakar</p>
-            </div>
-          </div>
-
-          <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-soft">
-            <p class="text-yellow-500">★★★★★</p>
-            <p class="mt-4 text-slate-600">
-              “Le bot ne remplace pas l’équipe, mais il nous enlève une grosse partie des réponses répétitives.”
-            </p>
-            <div class="mt-6">
-              <p class="font-bold text-slate-900">K. Diouf</p>
-              <p class="text-sm text-slate-500">Traiteur, Dakar</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pricing -->
-    <section id="tarifs" class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-3xl text-center">
-        <p class="text-sm font-bold uppercase tracking-[0.18em] text-brand-700">Tarifs</p>
-        <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
-          Des offres pensées pour les restaurants
-        </h2>
-        <p class="mt-5 text-lg leading-8 text-slate-600">
-          Tu peux ajuster ces prix plus tard. Pour l’instant, l’important est d’avoir une offre lisible et cohérente.
-        </p>
-      </div>
-
-      <div class="mt-12 grid gap-6 lg:grid-cols-3">
-        <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-soft">
-          <p class="text-sm font-bold uppercase tracking-wider text-slate-500">Starter</p>
-          <p class="mt-4 text-4xl font-extrabold text-slate-900">29K <span class="text-base font-semibold text-slate-500">CFA/mois</span></p>
-          <p class="mt-4 text-slate-600">Pour répondre automatiquement aux demandes les plus fréquentes.</p>
-
-          <ul class="mt-8 space-y-3 text-sm text-slate-700">
-            <li>✓ Réponses instantanées</li>
-            <li>✓ Menu, horaires, adresse, livraison</li>
-            <li>✓ Transfert à un humain</li>
-            <li>✓ Support WhatsApp</li>
-          </ul>
-
-          <p class="mt-6 text-sm text-slate-500">Mise en place : 25K CFA une seule fois</p>
-
-          <a
-            href="https://wa.me/221774952105?text=Bonjour%20Parla%2C%20je%20veux%20l%27offre%20Starter"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="mt-8 inline-flex w-full items-center justify-center rounded-xl border border-slate-300 px-5 py-3.5 text-base font-semibold text-slate-800 transition hover:bg-slate-50"
-          >
-            Choisir Starter
-          </a>
-        </div>
-
-        <div class="relative rounded-3xl border-2 border-brand-500 bg-white p-8 shadow-brand">
-          <div class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-brand-500 px-4 py-1 text-xs font-extrabold uppercase tracking-wider text-slate-900">
-            Recommandé
-          </div>
-          <p class="text-sm font-bold uppercase tracking-wider text-slate-500">Pro</p>
-          <p class="mt-4 text-4xl font-extrabold text-slate-900">49K <span class="text-base font-semibold text-slate-500">CFA/mois</span></p>
-          <p class="mt-4 text-slate-600">Pour les restaurants qui veulent aller plus loin que la simple réponse automatique.</p>
-
-          <ul class="mt-8 space-y-3 text-sm text-slate-700">
-            <li>✓ Tout Starter</li>
-            <li>✓ Pré-prise de commande</li>
-            <li>✓ Collecte du quartier et du téléphone</li>
-            <li>✓ Résumé automatique pour votre équipe</li>
-            <li>✓ Support prioritaire WhatsApp</li>
-          </ul>
-
-          <p class="mt-6 text-sm text-slate-500">Mise en place : 25K CFA une seule fois</p>
-
-          <a
-            href="https://wa.me/221774952105?text=Bonjour%20Parla%2C%20je%20veux%20l%27offre%20Pro"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="mt-8 inline-flex w-full items-center justify-center rounded-xl bg-brand-500 px-5 py-3.5 text-base font-bold text-slate-900 transition hover:bg-brand-600"
-          >
-            Choisir Pro
-          </a>
-        </div>
-
-        <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-soft">
-          <p class="text-sm font-bold uppercase tracking-wider text-slate-500">Business</p>
-          <p class="mt-4 text-4xl font-extrabold text-slate-900">89K <span class="text-base font-semibold text-slate-500">CFA/mois</span></p>
-          <p class="mt-4 text-slate-600">Pour les structures qui veulent un accompagnement plus poussé.</p>
-
-          <ul class="mt-8 space-y-3 text-sm text-slate-700">
-            <li>✓ Tout Pro</li>
-            <li>✓ Relances simples</li>
-            <li>✓ Messages promotionnels encadrés</li>
-            <li>✓ Ajustements mensuels</li>
-            <li>✓ Accompagnement dédié</li>
-          </ul>
-
-          <p class="mt-6 text-sm text-slate-500">Mise en place : 25K CFA une seule fois</p>
-
-          <a
-            href="https://wa.me/221774952105?text=Bonjour%20Parla%2C%20je%20veux%20l%27offre%20Business"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="mt-8 inline-flex w-full items-center justify-center rounded-xl border border-slate-300 px-5 py-3.5 text-base font-semibold text-slate-800 transition hover:bg-slate-50"
-          >
-            Choisir Business
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq" class="bg-slate-50 py-20">
-      <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-        <div class="mx-auto max-w-3xl text-center">
-          <p class="text-sm font-bold uppercase tracking-[0.18em] text-brand-700">FAQ</p>
-          <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
-            Questions fréquentes
-          </h2>
-        </div>
-
-        <div class="mt-12 space-y-4">
-          <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
-            <summary class="cursor-pointer list-none text-lg font-bold text-slate-900">
-              Combien de temps faut-il pour mettre Parla en place ?
-            </summary>
-            <p class="mt-3 text-slate-600">
-              Dans un cas standard, l’installation à distance prend entre 24 et 48 heures selon votre menu, vos réponses
-              et vos besoins.
-            </p>
-          </details>
-
-          <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
-            <summary class="cursor-pointer list-none text-lg font-bold text-slate-900">
-              Faut-il des compétences techniques ?
-            </summary>
-            <p class="mt-3 text-slate-600">
-              Non. Vous fournissez les informations utiles sur votre restaurant, et la configuration se fait pour vous.
-            </p>
-          </details>
-
-          <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
-            <summary class="cursor-pointer list-none text-lg font-bold text-slate-900">
-              Est-ce que Parla remplace totalement mon équipe ?
-            </summary>
-            <p class="mt-3 text-slate-600">
-              Non. Parla traite les questions répétitives et simples. Les demandes particulières ou sensibles peuvent être
-              transférées à un humain.
-            </p>
-          </details>
-
-          <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
-            <summary class="cursor-pointer list-none text-lg font-bold text-slate-900">
-              Est-ce que l’installation peut se faire à distance ?
-            </summary>
-            <p class="mt-3 text-slate-600">
-              Oui. Le service peut être mis en place à distance avec un échange WhatsApp, un appel ou une assistance guidée.
-            </p>
-          </details>
-
-          <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
-            <summary class="cursor-pointer list-none text-lg font-bold text-slate-900">
-              Puis-je tester avant de m’engager ?
-            </summary>
-            <p class="mt-3 text-slate-600">
-              Oui. Le plus simple est de demander une démonstration sur WhatsApp pour voir concrètement le fonctionnement.
-            </p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="py-20">
-      <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-        <div class="overflow-hidden rounded-[2rem] bg-slate-900 px-6 py-12 text-center text-white sm:px-10 lg:px-16">
-          <p class="text-sm font-bold uppercase tracking-[0.18em] text-brand-500">Prêt à tester ?</p>
-          <h2 class="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">
-            Montre-moi ton WhatsApp restaurant, je te montre ce que Parla peut faire
-          </h2>
-          <p class="mx-auto mt-5 max-w-2xl text-lg leading-8 text-slate-300">
-            Le moyen le plus simple de convaincre un restaurateur, c’est une démonstration courte et concrète.
-          </p>
-
-          <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-            <a
-              href="https://wa.me/221774952105?text=Bonjour%20Parla%2C%20je%20veux%20une%20d%C3%A9mo%20restaurant"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="inline-flex items-center justify-center rounded-xl bg-brand-500 px-6 py-3.5 text-base font-bold text-slate-900 transition hover:bg-brand-600"
-            >
-              💬 Demander une démo WhatsApp
-            </a>
-
-            <a
-              href="#tarifs"
-              class="inline-flex items-center justify-center rounded-xl border border-slate-600 px-6 py-3.5 text-base font-semibold text-white transition hover:bg-slate-800"
-            >
-              Voir les tarifs
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="border-t border-slate-200 bg-white">
-    <div class="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
-      <div>
-        <h3 class="text-lg font-extrabold text-slate-900">Parla</h3>
-        <p class="mt-3 text-sm leading-7 text-slate-600">
-          Assistant WhatsApp pour restaurants : menu, prix, livraison, commandes et transfert à un humain.
-        </p>
-      </div>
-
-      <div>
-        <h4 class="text-sm font-bold uppercase tracking-wider text-slate-900">Produit</h4>
-        <ul class="mt-4 space-y-3 text-sm text-slate-600">
-          <li><a href="#fonctionnement" class="hover:text-slate-900">Fonctionnement</a></li>
-          <li><a href="#benefices" class="hover:text-slate-900">Bénéfices</a></li>
-          <li><a href="#tarifs" class="hover:text-slate-900">Tarifs</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4 class="text-sm font-bold uppercase tracking-wider text-slate-900">Ressources</h4>
-        <ul class="mt-4 space-y-3 text-sm text-slate-600">
-          <li><a href="#faq" class="hover:text-slate-900">FAQ</a></li>
-          <li><a href="https://wa.me/221774952105" target="_blank" rel="noopener noreferrer" class="hover:text-slate-900">WhatsApp</a></li>
-          <li><a href="#" class="hover:text-slate-900">Politique de confidentialité</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4 class="text-sm font-bold uppercase tracking-wider text-slate-900">Contact</h4>
-        <ul class="mt-4 space-y-3 text-sm text-slate-600">
-          <li>Dakar, Sénégal</li>
-          <li><a href="https://wa.me/221774952105" target="_blank" rel="noopener noreferrer" class="hover:text-slate-900">+221 77 495 21 05</a></li>
-          <li><a href="mailto:contact@parla.africa" class="hover:text-slate-900">contact@parla.africa</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="border-t border-slate-200 px-4 py-6 text-center text-sm text-slate-500 sm:px-6 lg:px-8">
-      © 2026 Parla. Tous droits réservés.
-    </div>
-  </footer>
-
-  <script>
-    // Smooth scroll for internal anchors
-    document.querySelectorAll('a[href^="#"]').forEach(link => {
-      link.addEventListener('click', function (e) {
-        const targetId = this.getAttribute('href');
-        if (targetId.length > 1) {
-          const target = document.querySelector(targetId);
-          if (target) {
-            e.preventDefault();
-            target.scrollIntoView({ behavior: 'smooth' });
-          }
-        }
-      });
-    });
-  </script>
 </body>
+
 </html>
