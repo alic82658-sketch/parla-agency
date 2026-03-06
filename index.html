@@ -1,1798 +1,718 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Essentials -->
-    <title>Parla - Chatbot WhatsApp IA pour l'Afrique | Automatisez Service Client</title>
-    <meta name="description" content="Parla: Plateforme de chatbot WhatsApp bilingue (français + langue locale). Automatisez votre service client 24h/24. Sénégal, Mali, Côte d'Ivoire, DRC, Cameroun. Essayez gratuitement.">
-    <meta name="keywords" content="chatbot whatsapp afrique, automatisation whatsapp, assistant ia client, chatbot français wolof, whatsapp sénégal, automation entreprise, parla ai">
-    <meta name="author" content="Parla">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://parla.africa/">
-    
-    <!-- Open Graph (Social Sharing) -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Parla - Chatbot WhatsApp IA pour l'Afrique">
-    <meta property="og:description" content="Plateforme pan-africaine d'automatisation WhatsApp. Français + langue locale. Augmentez vos ventes 24h/24. Essai gratuit.">
-    <meta property="og:image" content="https://parla.africa/og-image.jpg">
-    <meta property="og:url" content="https://parla.africa/">
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Parla - Chatbot WhatsApp IA Africain">
-    <meta name="twitter:description" content="La plateforme qui parle votre langue. Automatisez WhatsApp en français + langue locale.">
-    
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Cookiebot - RGPD Compliance -->
-    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="YOUR_COOKIEBOT_ID" data-blockingmode="auto" type="text/javascript" async></script>
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗣️</text></svg>">
-    
-    <!-- Schema Markup -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "Parla - Chatbot WhatsApp IA",
-      "description": "Plateforme d'automatisation WhatsApp pan-africaine",
-      "url": "https://parla.africa",
-      "applicationCategory": "BusinessApplication",
-      "operatingSystem": "Web",
-      "offers": {
-        "@type": "AggregateOffer",
-        "priceCurrency": "XOF",
-        "lowPrice": "30000",
-        "highPrice": "90000"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "ratingCount": "127"
-      },
-      "creator": {
-        "@type": "Organization",
-        "name": "Parla",
-        "url": "https://parla.africa",
-        "sameAs": ["https://wa.me/221774952105"]
-      },
-      "areaServed": ["SN", "ML", "CI", "CD", "CM", "BJ", "TG", "GA", "CF", "CG"]
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Parla | Chatbot WhatsApp pour restaurants à Dakar</title>
+  <meta
+    name="description"
+    content="Parla aide les restaurants à répondre automatiquement sur WhatsApp : menu, prix, livraison, horaires, commandes et transfert à un humain. Installation à distance."
+  />
+  <meta
+    name="keywords"
+    content="chatbot whatsapp restaurant, automatisation whatsapp restaurant, bot whatsapp dakar, assistant whatsapp restaurant, menu whatsapp restaurant"
+  />
+  <meta name="author" content="Parla" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://parla.africa/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Parla | Votre WhatsApp prend des commandes 24/7" />
+  <meta
+    property="og:description"
+    content="Menu, prix, livraison, horaires : Parla répond automatiquement aux clients des restaurants sur WhatsApp."
+  />
+  <meta property="og:url" content="https://parla.africa/" />
+  <meta property="og:image" content="https://parla.africa/og-image.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Parla | Chatbot WhatsApp pour restaurants" />
+  <meta
+    name="twitter:description"
+    content="Automatisez les messages WhatsApp de votre restaurant : menu, livraison, commandes et réponses instantanées."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#ecfeff',
+              100: '#cffafe',
+              500: '#00d9d9',
+              600: '#00b8b8',
+              700: '#009696',
+              900: '#0f172a'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif']
+          },
+          boxShadow: {
+            soft: '0 10px 30px rgba(15, 23, 42, 0.08)',
+            brand: '0 12px 35px rgba(0, 217, 217, 0.22)'
+          }
+        }
+      }
     }
-    </script>
-
-    <style>
-        /* ============== RESET & VARIABLES ============== */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --cyan: #00d9d9;
-            --cyan-dark: #00a8a8;
-            --dark: #1a1a1a;
-            --gray-dark: #2d3436;
-            --gray: #a0a0a0;
-            --gray-light: #d4d4d4;
-            --light-bg: #f8f9fa;
-            --white: #ffffff;
-            --coral: #ff6b6b;
-            --success: #2ecc71;
-            --border: rgba(0, 217, 217, 0.1);
-            
-            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
-            --shadow-md: 0 10px 30px rgba(0, 217, 217, 0.1);
-            --shadow-lg: 0 20px 60px rgba(0, 217, 217, 0.15);
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            color: var(--gray-dark);
-            background: var(--white);
-            overflow-x: hidden;
-            line-height: 1.6;
-        }
-
-        /* ============== HEADER & NAV ============== */
-        header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.98);
-            backdrop-filter: blur(10px);
-            z-index: 1000;
-            padding: 1rem 2rem;
-            border-bottom: 1px solid var(--border);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-        }
-
-        .header-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 800;
-            background: linear-gradient(135deg, var(--cyan), var(--cyan-dark));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 0.7rem;
-        }
-
-        nav {
-            display: flex;
-            gap: 2.5rem;
-            align-items: center;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: var(--gray-dark);
-            font-size: 0.95rem;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-
-        nav a:hover {
-            color: var(--cyan);
-        }
-
-        .cta-button {
-            background: linear-gradient(135deg, var(--cyan), var(--cyan-dark));
-            color: var(--dark);
-            padding: 0.75rem 1.75rem;
-            border: none;
-            border-radius: 8px;
-            font-weight: 600;
-            font-size: 0.95rem;
-            cursor: pointer;
-            transition: var(--transition);
-            box-shadow: 0 4px 15px rgba(0, 217, 217, 0.2);
-        }
-
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(0, 217, 217, 0.4);
-        }
-
-        /* ============== HERO SECTION ============== */
-        .hero {
-            margin-top: 80px;
-            min-height: calc(100vh - 80px);
-            display: flex;
-            align-items: center;
-            padding: 3rem 2rem;
-            background: linear-gradient(135deg, var(--white) 0%, rgba(0, 217, 217, 0.03) 100%);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -20%;
-            right: -10%;
-            width: 700px;
-            height: 700px;
-            background: radial-gradient(circle, rgba(0, 217, 217, 0.08) 0%, transparent 70%);
-            border-radius: 50%;
-            animation: float 6s ease-in-out infinite;
-        }
-
-        .hero::after {
-            content: '';
-            position: absolute;
-            bottom: -30%;
-            left: -5%;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, rgba(0, 217, 217, 0.05) 0%, transparent 70%);
-            border-radius: 50%;
-            animation: float 8s ease-in-out infinite reverse;
-        }
-
-        .hero-content {
-            max-width: 1200px;
-            width: 100%;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-            position: relative;
-            z-index: 1;
-        }
-
-        .hero-text h1 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 3.5rem;
-            font-weight: 800;
-            line-height: 1.1;
-            color: var(--dark);
-            margin-bottom: 1.5rem;
-            animation: fadeInUp 0.8s ease-out;
-        }
-
-        .hero-text h1 .highlight {
-            background: linear-gradient(135deg, var(--cyan), var(--cyan-dark));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .hero-subtitle {
-            font-size: 1.2rem;
-            color: var(--gray);
-            margin-bottom: 2rem;
-            line-height: 1.8;
-            animation: fadeInUp 0.8s ease-out 0.2s both;
-        }
-
-        .hero-ctas {
-            display: flex;
-            gap: 1rem;
-            animation: fadeInUp 0.8s ease-out 0.4s both;
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, var(--cyan), var(--cyan-dark));
-            color: var(--dark);
-            padding: 1rem 2.5rem;
-            border: none;
-            border-radius: 8px;
-            font-weight: 700;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: var(--transition);
-            box-shadow: 0 10px 30px rgba(0, 217, 217, 0.3);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 15px 45px rgba(0, 217, 217, 0.5);
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: var(--dark);
-            padding: 1rem 2.5rem;
-            border: 2px solid var(--dark);
-            border-radius: 8px;
-            font-weight: 700;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: var(--transition);
-        }
-
-        .btn-secondary:hover {
-            background: var(--dark);
-            color: var(--white);
-        }
-
-        .hero-visual {
-            position: relative;
-            animation: fadeInRight 0.8s ease-out 0.3s both;
-        }
-
-        .hero-visual-box {
-            background: linear-gradient(135deg, rgba(0, 217, 217, 0.1), rgba(0, 217, 217, 0.05));
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 2rem;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 20px 60px rgba(0, 217, 217, 0.1);
-        }
-
-        .phone-mockup {
-            background: var(--dark);
-            border-radius: 30px;
-            padding: 12px;
-            max-width: 300px;
-            margin: 0 auto;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-        }
-
-        .phone-screen {
-            background: linear-gradient(135deg, var(--light-bg), var(--white));
-            border-radius: 25px;
-            padding: 1rem;
-            aspect-ratio: 9/16;
-            display: flex;
-            flex-direction: column;
-            gap: 0.75rem;
-            overflow: hidden;
-        }
-
-        .chat-bubble {
-            padding: 0.75rem 1rem;
-            border-radius: 12px;
-            font-size: 0.85rem;
-            animation: slideInLeft 0.5s ease-out;
-        }
-
-        .chat-bubble.bot {
-            background: var(--cyan);
-            color: var(--dark);
-            border-radius: 12px 12px 12px 0;
-            max-width: 80%;
-        }
-
-        .chat-bubble.user {
-            background: var(--dark);
-            color: var(--white);
-            border-radius: 12px 12px 0 12px;
-            max-width: 80%;
-            align-self: flex-end;
-        }
-
-        /* ============== AFRICA PRESENCE ============== */
-        .africa-presence {
-            padding: 2rem;
-            text-align: center;
-            background: rgba(0, 217, 217, 0.05);
-            border-radius: 12px;
-            margin-top: 2rem;
-            animation: fadeInUp 0.8s ease-out 0.5s both;
-        }
-
-        .africa-presence p {
-            font-size: 0.9rem;
-            color: var(--gray);
-            margin-bottom: 0.75rem;
-            font-weight: 600;
-        }
-
-        .flag-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.75rem;
-            justify-content: center;
-            font-size: 1.8rem;
-        }
-<!-- Demo Video Section -->
-    <section class="demo-video">
-        <div class="section-header">
-            <div class="section-label">Voyez comment ça marche</div>
-            <h2>Parla en action</h2>
-            <p>Regardez une démonstration complète et testez immédiatement sur WhatsApp</p>
-        </div>
-        
-        <div class="demo-container">
-            <div class="video-wrapper">
-                <div class="video-placeholder">
-                    <div style="font-size: 4rem; margin-bottom: 1rem;">🎬</div>
-                    <p>Vidéo de démonstration</p>
-                    <p style="font-size: 0.9rem; color: #a0a0a0;">
-                        Pour ajouter votre vidéo YouTube, contactez-nous
-                    </p>
-                </div>
-            </div>
-
-            <div class="demo-cta">
-                <h3>Prêt à essayer?</h3>
-                <p>Testez Parla directement sur WhatsApp en 30 secondes</p>
-                <button onclick="window.open('https://wa.me/221774952105?text=Salut%20Parla!%20Je%20veux%20tester%20votre%20chatbot', '_blank')" style="background: linear-gradient(135deg, #00d9d9, #00a8a8); color: #1a1a1a; padding: 1.2rem 2.5rem; border: none; border-radius: 8px; font-weight: 700; font-size: 1rem; cursor: pointer; width: 100%; max-width: 300px;">
-                    💬 Tester maintenant sur WhatsApp
-                </button>
-                <p style="font-size: 0.85rem; color: #a0a0a0; margin-top: 1rem;">
-                    Pas de compte nécessaire. Aucun engagement.
-                </p>
-            </div>
-        </div>
-    </section>        /* ============== METRICS SECTION ============== */
-        .metrics {
-            padding: 4rem 2rem;
-            background: linear-gradient(135deg, rgba(0, 217, 217, 0.05), var(--white));
-        }
-
-        /* ============== DEMO VIDEO SECTION ============== */
-        .demo-video {
-            padding: 5rem 2rem;
-            background: var(--white);
-        }
-
-        .demo-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-        }
-
-        .video-wrapper {
-            animation: fadeInUp 0.8s ease-out 0.1s both;
-        }
-
-        .video-placeholder {
-            background: linear-gradient(135deg, rgba(0, 217, 217, 0.1), rgba(0, 217, 217, 0.05));
-            border: 2px dashed var(--border);
-            border-radius: 12px;
-            padding: 3rem;
-            text-align: center;
-            color: var(--gray);
-            aspect-ratio: 16/9;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .video-placeholder p {
-            margin: 0.5rem 0;
-        }
-
-        .demo-cta {
-            animation: fadeInUp 0.8s ease-out 0.2s both;
-        }
-
-        .demo-cta h3 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--dark);
-            margin-bottom: 0.5rem;
-        }
-
-        .demo-cta p {
-            font-size: 1rem;
-            color: var(--gray);
-            margin-bottom: 1.5rem;
-            line-height: 1.6;
-        }
-
-        .btn-demo-whatsapp {
-            background: linear-gradient(135deg, var(--cyan), var(--cyan-dark));
-            color: var(--dark);
-            padding: 1.2rem 2.5rem;
-            border: none;
-            border-radius: 8px;
-            font-weight: 700;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: var(--transition);
-            box-shadow: 0 10px 30px rgba(0, 217, 217, 0.3);
-            width: 100%;
-            max-width: 300px;
-        }
-
-        .btn-demo-whatsapp:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 15px 45px rgba(0, 217, 217, 0.5);
-        }
-
-        @media (max-width: 768px) {
-            .demo-container {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-            .demo-cta h3 {
-                font-size: 1.3rem;
-            }
-        }
-
-        .metrics-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-        }
-
-        .metric-card {
-            text-align: center;
-            animation: scaleIn 0.6s ease-out;
-        }
-
-        .metric-card:nth-child(1) { animation-delay: 0.1s; }
-        .metric-card:nth-child(2) { animation-delay: 0.2s; }
-        .metric-card:nth-child(3) { animation-delay: 0.3s; }
-        .metric-card:nth-child(4) { animation-delay: 0.4s; }
-
-        .metric-number {
-            font-family: 'Poppins', sans-serif;
-            font-size: 3rem;
-            font-weight: 800;
-            background: linear-gradient(135deg, var(--cyan), var(--cyan-dark));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 0.5rem;
-        }
-
-        .metric-label {
-            font-size: 0.95rem;
-            color: var(--gray);
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        /* ============== PROBLEM SECTION ============== */
-        .problem {
-            padding: 5rem 2rem;
-            background: var(--white);
-        }
-
-        .section-header {
-            max-width: 800px;
-            margin: 0 auto 3rem;
-            text-align: center;
-        }
-
-        .section-label {
-            color: var(--cyan);
-            font-size: 0.85rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 1rem;
-        }
-
-        .section-header h2 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 2.5rem;
-            font-weight: 800;
-            color: var(--dark);
-            margin-bottom: 1rem;
-            line-height: 1.2;
-        }
-
-        .section-header p {
-            font-size: 1.1rem;
-            color: var(--gray);
-            line-height: 1.8;
-        }
-
-        .problems-grid {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .problem-card {
-            background: var(--light-bg);
-            padding: 2.5rem;
-            border-radius: 12px;
-            border: 1px solid var(--border);
-            transition: var(--transition);
-            animation: fadeInUp 0.6s ease-out;
-        }
-
-        .problem-card:nth-child(1) { animation-delay: 0.1s; }
-        .problem-card:nth-child(2) { animation-delay: 0.2s; }
-        .problem-card:nth-child(3) { animation-delay: 0.3s; }
-
-        .problem-card:hover {
-            background: var(--white);
-            box-shadow: var(--shadow-lg);
-            border-color: var(--cyan);
-            transform: translateY(-5px);
-        }
-
-        .problem-icon {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .problem-card h3 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: var(--dark);
-            margin-bottom: 0.75rem;
-        }
-
-        .problem-card p {
-            color: var(--gray);
-            line-height: 1.7;
-        }
-
-        /* ============== SOLUTION SECTION ============== */
-        .solution {
-            padding: 5rem 2rem;
-            background: linear-gradient(135deg, rgba(0, 217, 217, 0.05), var(--white));
-        }
-
-        .solution-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-        }
-
-        .solution-text h2 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 2.8rem;
-            font-weight: 800;
-            color: var(--dark);
-            margin-bottom: 1.5rem;
-            line-height: 1.2;
-        }
-
-        .solution-text p {
-            font-size: 1.1rem;
-            color: var(--gray);
-            margin-bottom: 2rem;
-            line-height: 1.8;
-        }
-
-        .features-list {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-
-        .feature-item {
-            display: flex;
-            gap: 1.5rem;
-            padding: 1.5rem;
-            background: var(--white);
-            border-radius: 12px;
-            border: 1px solid var(--border);
-            transition: var(--transition);
-            animation: slideInRight 0.6s ease-out;
-        }
-
-        .feature-item:nth-child(1) { animation-delay: 0.1s; }
-        .feature-item:nth-child(2) { animation-delay: 0.2s; }
-        .feature-item:nth-child(3) { animation-delay: 0.3s; }
-        .feature-item:nth-child(4) { animation-delay: 0.4s; }
-
-        .feature-item:hover {
-            border-color: var(--cyan);
-            box-shadow: var(--shadow-md);
-        }
-
-        .feature-icon {
-            font-size: 2rem;
-            flex-shrink: 0;
-            width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .feature-item h3 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: var(--dark);
-            margin-bottom: 0.5rem;
-        }
-
-        .feature-item p {
-            color: var(--gray);
-            font-size: 0.95rem;
-            line-height: 1.6;
-            margin: 0;
-        }
-
-        /* ============== TESTIMONIALS SECTION ============== */
-        .testimonials {
-            padding: 5rem 2rem;
-            background: var(--white);
-        }
-
-        .testimonials-grid {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .testimonial-card {
-            background: var(--light-bg);
-            padding: 2rem;
-            border-radius: 12px;
-            border: 1px solid var(--border);
-            transition: var(--transition);
-            animation: scaleIn 0.6s ease-out;
-        }
-
-        .testimonial-card:nth-child(1) { animation-delay: 0.1s; }
-        .testimonial-card:nth-child(2) { animation-delay: 0.2s; }
-        .testimonial-card:nth-child(3) { animation-delay: 0.3s; }
-
-        .testimonial-card:hover {
-            background: var(--white);
-            box-shadow: var(--shadow-lg);
-            border-color: var(--cyan);
-        }
-
-        .stars {
-            color: #ffc107;
-            margin-bottom: 1rem;
-            font-size: 1.1rem;
-        }
-
-        .testimonial-text {
-            color: var(--gray-dark);
-            margin-bottom: 1.5rem;
-            line-height: 1.7;
-            font-style: italic;
-        }
-
-        .testimonial-author {
-            display: flex;
-            gap: 1rem;
-            align-items: center;
-        }
-
-        .author-avatar {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--cyan), var(--cyan-dark));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--white);
-            font-weight: 700;
-        }
-
-        .author-info h4 {
-            color: var(--dark);
-            margin: 0;
-            font-weight: 700;
-        }
-
-        .author-info p {
-            color: var(--gray);
-            font-size: 0.85rem;
-            margin: 0;
-        }
-
-        /* ============== USE CASES SECTION ============== */
-        .usecases {
-            padding: 5rem 2rem;
-            background: linear-gradient(135deg, rgba(0, 217, 217, 0.05), var(--white));
-        }
-
-        .usecases-grid {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-        }
-
-        .usecase-card {
-            background: var(--white);
-            padding: 2rem;
-            border-radius: 12px;
-            border: 1px solid var(--border);
-            text-align: center;
-            transition: var(--transition);
-            animation: fadeInUp 0.6s ease-out;
-        }
-
-        .usecase-card:nth-child(1) { animation-delay: 0.1s; }
-        .usecase-card:nth-child(2) { animation-delay: 0.2s; }
-        .usecase-card:nth-child(3) { animation-delay: 0.3s; }
-        .usecase-card:nth-child(4) { animation-delay: 0.4s; }
-
-        .usecase-card:hover {
-            box-shadow: var(--shadow-lg);
-            border-color: var(--cyan);
-            transform: translateY(-8px);
-        }
-
-        .usecase-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .usecase-card h3 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: var(--dark);
-            margin-bottom: 1rem;
-        }
-
-        .usecase-card p {
-            color: var(--gray);
-            line-height: 1.7;
-            margin-bottom: 1.5rem;
-        }
-
-        .usecase-link {
-            color: var(--cyan);
-            font-weight: 600;
-            text-decoration: none;
-            transition: var(--transition);
-        }
-
-        .usecase-link:hover {
-            color: var(--cyan-dark);
-        }
-
-        /* ============== PRICING SECTION ============== */
-        .pricing {
-            padding: 5rem 2rem;
-            background: var(--white);
-        }
-
-        .pricing-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .pricing-card {
-            background: var(--white);
-            padding: 2.5rem;
-            border-radius: 12px;
-            border: 2px solid var(--border);
-            transition: var(--transition);
-            position: relative;
-            animation: scaleIn 0.6s ease-out;
-        }
-
-        .pricing-card:nth-child(1) { animation-delay: 0.1s; }
-        .pricing-card:nth-child(2) { animation-delay: 0.2s; }
-        .pricing-card:nth-child(3) { animation-delay: 0.3s; }
-
-        .pricing-card.featured {
-            border-color: var(--cyan);
-            box-shadow: var(--shadow-lg);
-            transform: scaleY(1.05);
-        }
-
-        .pricing-badge {
-            display: inline-block;
-            background: linear-gradient(135deg, var(--cyan), var(--cyan-dark));
-            color: var(--dark);
-            padding: 0.5rem 1rem;
-            border-radius: 50px;
-            font-size: 0.75rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
-
-        .pricing-icon {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .pricing-card h3 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--dark);
-            margin-bottom: 0.5rem;
-        }
-
-        .pricing-price {
-            font-family: 'Poppins', sans-serif;
-            font-size: 2.8rem;
-            font-weight: 800;
-            background: linear-gradient(135deg, var(--cyan), var(--cyan-dark));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin: 1rem 0;
-        }
-
-        .pricing-currency {
-            font-size: 0.9rem;
-            color: var(--gray);
-        }
-
-        .pricing-period {
-            color: var(--gray);
-            font-size: 0.95rem;
-            margin-bottom: 2rem;
-        }
-
-        .pricing-features {
-            list-style: none;
-            margin: 2rem 0;
-        }
-
-        .pricing-features li {
-            padding: 0.75rem 0;
-            color: var(--gray-dark);
-            border-bottom: 1px solid var(--border);
-            display: flex;
-            align-items: center;
-            font-size: 0.95rem;
-        }
-
-        .pricing-features li::before {
-            content: '✓';
-            color: var(--cyan);
-            font-weight: bold;
-            margin-right: 0.75rem;
-            font-size: 1.2rem;
-        }
-
-        .pricing-btn {
-            width: 100%;
-            padding: 1rem;
-            background: var(--light-bg);
-            border: 2px solid var(--border);
-            color: var(--dark);
-            border-radius: 8px;
-            font-weight: 700;
-            font-size: 0.95rem;
-            cursor: pointer;
-            transition: var(--transition);
-            margin-top: 2rem;
-        }
-
-        .pricing-card.featured .pricing-btn {
-            background: linear-gradient(135deg, var(--cyan), var(--cyan-dark));
-            color: var(--dark);
-            border-color: var(--cyan);
-        }
-
-        .pricing-btn:hover {
-            background: var(--dark);
-            color: var(--white);
-            border-color: var(--dark);
-        }
-
-        .pricing-card.featured .pricing-btn:hover {
-            background: var(--cyan-dark);
-            border-color: var(--cyan-dark);
-        }
-
-        .pricing-note {
-            font-size: 0.8rem;
-            color: var(--gray);
-            margin-top: 1rem;
-            text-align: center;
-        }
-
-        /* ============== FAQ SECTION ============== */
-        .faq {
-            padding: 5rem 2rem;
-            background: linear-gradient(135deg, rgba(0, 217, 217, 0.05), var(--white));
-        }
-
-        .faq-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .faq-items {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-
-        .faq-item {
-            background: var(--white);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            overflow: hidden;
-            transition: var(--transition);
-            animation: fadeInUp 0.6s ease-out;
-        }
-
-        .faq-item:nth-child(1) { animation-delay: 0.1s; }
-        .faq-item:nth-child(2) { animation-delay: 0.2s; }
-        .faq-item:nth-child(3) { animation-delay: 0.3s; }
-        .faq-item:nth-child(4) { animation-delay: 0.4s; }
-        .faq-item:nth-child(5) { animation-delay: 0.5s; }
-
-        .faq-item:hover {
-            border-color: var(--cyan);
-            box-shadow: var(--shadow-md);
-        }
-
-        .faq-trigger {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            padding: 1.5rem;
-            background: transparent;
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
-            font-weight: 600;
-            color: var(--dark);
-            text-align: left;
-        }
-
-        .faq-trigger:hover {
-            color: var(--cyan);
-        }
-
-        .faq-arrow {
-            transition: var(--transition);
-            font-size: 1.5rem;
-        }
-
-        .faq-item.active .faq-arrow {
-            transform: rotate(180deg);
-        }
-
-        .faq-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease;
-            padding: 0 1.5rem;
-        }
-
-        .faq-item.active .faq-content {
-            max-height: 500px;
-            padding: 0 1.5rem 1.5rem;
-        }
-
-        .faq-content p {
-            color: var(--gray);
-            line-height: 1.7;
-        }
-
-        /* ============== FINAL CTA SECTION ============== */
-        .final-cta {
-            padding: 5rem 2rem;
-            background: linear-gradient(135deg, var(--cyan) 0%, var(--cyan-dark) 100%);
-            text-align: center;
-            color: var(--dark);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .final-cta::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -50%;
-            width: 500px;
-            height: 500px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-        }
-
-        .final-cta-content {
-            position: relative;
-            z-index: 1;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .final-cta h2 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin-bottom: 1rem;
-        }
-
-        .final-cta p {
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
-            opacity: 0.95;
-            line-height: 1.8;
-        }
-
-        .final-cta-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .btn-white {
-            background: var(--white);
-            color: var(--cyan);
-            padding: 1rem 2.5rem;
-            border: none;
-            border-radius: 8px;
-            font-weight: 700;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: var(--transition);
-        }
-
-        .btn-white:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
-        }
-
-        /* ============== FOOTER ============== */
-        footer {
-            background: var(--dark);
-            color: var(--gray);
-            padding: 3rem 2rem 1rem;
-        }
-
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .footer-col h4 {
-            color: var(--white);
-            margin-bottom: 1rem;
-            font-weight: 600;
-        }
-
-        .footer-col a {
-            color: var(--gray);
-            text-decoration: none;
-            transition: color 0.3s ease;
-            display: block;
-            margin-bottom: 0.5rem;
-            font-size: 0.9rem;
-        }
-
-        .footer-col a:hover {
-            color: var(--cyan);
-        }
-
-        .footer-bottom {
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding-top: 2rem;
-            text-align: center;
-            font-size: 0.9rem;
-        }
-
-        /* ============== ANIMATIONS ============== */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeInRight {
-            from {
-                opacity: 0;
-                transform: translateX(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        @keyframes slideInLeft {
-            from {
-                opacity: 0;
-                transform: translateX(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        @keyframes slideInRight {
-            from {
-                opacity: 0;
-                transform: translateX(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        @keyframes scaleIn {
-            from {
-                opacity: 0;
-                transform: scale(0.95);
-            }
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0px);
-            }
-            50% {
-                transform: translateY(20px);
-            }
-        }
-
-        /* ============== RESPONSIVE ============== */
-        @media (max-width: 768px) {
-            header {
-                padding: 1rem;
-            }
-
-            nav {
-                display: none;
-            }
-
-            .hero {
-                margin-top: 70px;
-                min-height: auto;
-                padding: 2rem 1rem;
-            }
-
-            .hero-content {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-            .hero-text h1 {
-                font-size: 2rem;
-            }
-
-            .hero-visual {
-                order: -1;
-            }
-
-            .hero-ctas {
-                flex-direction: column;
-            }
-
-            .section-header h2 {
-                font-size: 1.8rem;
-            }
-
-            .solution-content {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-            .pricing-card.featured {
-                transform: scaleY(1);
-            }
-
-            .final-cta h2 {
-                font-size: 1.8rem;
-            }
-
-            .final-cta-buttons {
-                flex-direction: column;
-            }
-
-            .btn-white, .btn-primary {
-                width: 100%;
-            }
-
-            .metrics-container {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .flag-grid {
-                font-size: 1.4rem;
-                gap: 0.5rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero-text h1 {
-                font-size: 1.5rem;
-            }
-
-            .metric-number {
-                font-size: 2rem;
-            }
-
-            .section-header h2 {
-                font-size: 1.5rem;
-            }
-
-            .metrics-container {
-                grid-template-columns: 1fr;
-            }
-
-            .flag-grid {
-                font-size: 1.2rem;
-            }
-        }
-    </style>
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Parla",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "url": "https://parla.africa/",
+    "description": "Assistant WhatsApp pour restaurants : réponses automatiques, menu, livraison, commandes et transfert à un humain.",
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": "XOF",
+      "lowPrice": "29000",
+      "highPrice": "89000"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"Combien de temps faut-il pour installer Parla ?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"L'installation se fait à distance. La configuration initiale prend généralement entre 24 et 48 heures selon le menu, les réponses et les scénarios à mettre en place."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Est-ce que Parla remplace totalement mon équipe ?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Non. Parla traite surtout les questions répétitives comme le menu, les horaires, la livraison ou les demandes simples. Les demandes importantes peuvent être transférées à votre équipe."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Parla fonctionne-t-il avec WhatsApp Business ?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Oui. Parla est conçu pour s'intégrer à un usage professionnel de WhatsApp afin d'automatiser les réponses client et de fluidifier la prise de commande."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
-<body>
-    <!-- Header -->
-    <header>
-        <div class="header-container">
-            <a href="#" class="logo">🗣️ Parla</a>
-            <nav>
-                <a href="#solution">Solution</a>
-                <a href="#testimonials">Avis</a>
-                <a href="#pricing">Tarifs</a>
-                <a href="#faq">FAQ</a>
-                <button class="cta-button" onclick="scrollToSection('final-cta')">Démarrer</button>
-            </nav>
-        </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>La plateforme qui <span class="highlight">parle votre langue</span></h1>
-                <p class="hero-subtitle">Chatbot WhatsApp bilingue (français + langue locale). Automatisez votre service client 24h/24. Déploiement 48h. Zéro code. Résultats visibles la première semaine.</p>
-                <div class="hero-ctas">
-                    <button class="btn-primary" onclick="scrollToSection('final-cta')">Essai gratuit 7 jours</button>
-                    <button class="btn-secondary" onclick="scrollToSection('solution')">Voir comment ça marche</button>
-                </div>
-                <div class="africa-presence">
-                    <p>Présent en Afrique francophone</p>
-                    <div class="flag-grid">
-                        🇸🇳 🇲🇱 🇨🇮 🇨🇩 🇨🇲 🇧🇯 🇹🇬 🇬🇦
-                    </div>
-                </div>
+<body class="bg-white text-slate-800 antialiased">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+      <a href="#" class="flex items-center gap-2 text-xl font-extrabold tracking-tight text-slate-900">
+        <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-brand-500/15 text-brand-700">💬</span>
+        Parla
+      </a>
+
+      <nav class="hidden items-center gap-8 md:flex">
+        <a href="#fonctionnement" class="text-sm font-medium text-slate-600 transition hover:text-slate-900">Fonctionnement</a>
+        <a href="#benefices" class="text-sm font-medium text-slate-600 transition hover:text-slate-900">Bénéfices</a>
+        <a href="#tarifs" class="text-sm font-medium text-slate-600 transition hover:text-slate-900">Tarifs</a>
+        <a href="#faq" class="text-sm font-medium text-slate-600 transition hover:text-slate-900">FAQ</a>
+      </nav>
+
+      <a
+        href="https://wa.me/221774952105?text=Bonjour%20Parla%2C%20je%20veux%20tester%20la%20d%C3%A9mo%20restaurant"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2.5 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-slate-800"
+      >
+        Tester sur WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-b from-brand-50 via-white to-white"></div>
+      <div class="relative mx-auto grid max-w-7xl gap-14 px-4 py-16 sm:px-6 md:py-20 lg:grid-cols-2 lg:items-center lg:px-8 lg:py-24">
+        <div>
+          <div class="mb-5 inline-flex items-center rounded-full border border-brand-100 bg-brand-50 px-3 py-1 text-sm font-semibold text-brand-700">
+            Pour restaurants, fast-foods et traiteurs
+          </div>
+
+          <h1 class="max-w-2xl text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+            Votre WhatsApp prend des commandes et répond aux clients
+            <span class="text-brand-700">24h/24</span>
+          </h1>
+
+          <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
+            Menu, prix, livraison, horaires, adresse, questions fréquentes : Parla répond instantanément sur WhatsApp
+            et transfère à votre équipe quand c’est nécessaire.
+          </p>
+
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a
+              href="https://wa.me/221774952105?text=Bonjour%20Parla%2C%20je%20veux%20tester%20la%20d%C3%A9mo%20restaurant"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center rounded-xl bg-brand-500 px-6 py-3.5 text-base font-bold text-slate-900 shadow-brand transition hover:-translate-y-0.5 hover:bg-brand-600"
+            >
+              Tester sur WhatsApp
+            </a>
+            <a
+              href="#fonctionnement"
+              class="inline-flex items-center justify-center rounded-xl border border-slate-300 px-6 py-3.5 text-base font-semibold text-slate-700 transition hover:border-slate-400 hover:bg-slate-50"
+            >
+              Voir comment ça marche
+            </a>
+          </div>
+
+          <div class="mt-8 grid gap-3 sm:grid-cols-3">
+            <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-soft">
+              <p class="text-sm font-semibold text-slate-900">Installation à distance</p>
+              <p class="mt-1 text-sm text-slate-600">Simple, sans déplacement</p>
             </div>
-            <div class="hero-visual">
-                <div class="hero-visual-box">
-                    <div class="phone-mockup">
-                        <div class="phone-screen">
-                            <div class="chat-bubble bot">Bonjour 👋<br>Je suis Parla</div>
-                            <div class="chat-bubble user">C'est combien?</div>
-                            <div class="chat-bubble bot">Offre STARTER: 30K CFA/mois 💰</div>
-                            <div class="chat-bubble user">Parlez m'en plus</div>
-                            <div class="chat-bubble bot">Envoie! Détails complets 🚀</div>
-                        </div>
-                    </div>
-                </div>
+            <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-soft">
+              <p class="text-sm font-semibold text-slate-900">Réponse immédiate</p>
+              <p class="mt-1 text-sm text-slate-600">Même quand vous êtes occupé</p>
             </div>
+            <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-soft">
+              <p class="text-sm font-semibold text-slate-900">Support humain</p>
+              <p class="mt-1 text-sm text-slate-600">Par WhatsApp après installation</p>
+            </div>
+          </div>
         </div>
+
+        <div class="relative">
+          <div class="mx-auto max-w-md rounded-[2rem] border border-slate-200 bg-white p-4 shadow-soft">
+            <div class="rounded-[1.5rem] bg-slate-950 p-3">
+              <div class="rounded-[1.2rem] bg-[#efeae2] p-4">
+                <div class="mb-4 flex items-center gap-3">
+                  <div class="h-10 w-10 rounded-full bg-brand-500/20"></div>
+                  <div>
+                    <p class="text-sm font-bold text-slate-900">Parla Demo</p>
+                    <p class="text-xs text-slate-500">En ligne</p>
+                  </div>
+                </div>
+
+                <div class="space-y-3 text-sm">
+                  <div class="max-w-[85%] rounded-2xl rounded-bl-sm bg-white px-4 py-3 text-slate-700 shadow">
+                    Bonjour, vous avez le menu ?
+                  </div>
+
+                  <div class="ml-auto max-w-[85%] rounded-2xl rounded-br-sm bg-brand-500 px-4 py-3 font-medium text-slate-900 shadow">
+                    Bonjour 👋 Voici notre menu du jour :
+                    <br><br>
+                    1️⃣ Poulet braisé – 3 500 CFA
+                    <br>
+                    2️⃣ Yassa poulet – 3 000 CFA
+                    <br>
+                    3️⃣ Sandwich – 2 000 CFA
+                  </div>
+
+                  <div class="max-w-[85%] rounded-2xl rounded-bl-sm bg-white px-4 py-3 text-slate-700 shadow">
+                    Je prends 2 poulets braisés
+                  </div>
+
+                  <div class="ml-auto max-w-[85%] rounded-2xl rounded-br-sm bg-brand-500 px-4 py-3 font-medium text-slate-900 shadow">
+                    Parfait 👍
+                    <br>
+                    Quel est votre quartier pour la livraison ?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-5 text-center text-sm text-slate-500">
+            Démo de conversation type restaurant
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Metrics -->
-    <section class="metrics">
-        <div class="metrics-container">
-            <div class="metric-card">
-                <div class="metric-number">24h/<span style="color: var(--dark);">24</span></div>
-                <div class="metric-label">Disponibilité garantie</div>
-            </div>
-            <div class="metric-card">
-                <div class="metric-number">48h</div>
-                <div class="metric-label">Déploiement complet</div>
-            </div>
-            <div class="metric-card">
-                <div class="metric-number">-80%</div>
-                <div class="metric-label">Charge de travail</div>
-            </div>
-            <div class="metric-card">
-                <div class="metric-number">+300</div>
-                <div class="metric-label">PME actives</div>
-            </div>
+    <!-- Proof strip -->
+    <section class="border-y border-slate-200 bg-slate-50">
+      <div class="mx-auto grid max-w-7xl gap-6 px-4 py-6 text-center sm:grid-cols-3 sm:px-6 lg:px-8">
+        <div>
+          <p class="text-2xl font-extrabold text-slate-900">&lt; 3 sec</p>
+          <p class="text-sm text-slate-600">pour répondre aux demandes simples</p>
         </div>
+        <div>
+          <p class="text-2xl font-extrabold text-slate-900">24h/24</p>
+          <p class="text-sm text-slate-600">pour envoyer menu, horaires et infos</p>
+        </div>
+        <div>
+          <p class="text-2xl font-extrabold text-slate-900">48h</p>
+          <p class="text-sm text-slate-600">pour une mise en place standard</p>
+        </div>
+      </div>
     </section>
 
-    <!-- Demo Video Section -->
-    <section class="demo-video">
-        <div class="section-header">
-            <div class="section-label">Voyez comment ça marche</div>
-            <h2>Parla en action</h2>
-            <p>Regardez une démonstration complète et testez immédiatement sur WhatsApp</p>
-        </div>
-        
-        <div class="demo-container">
-            <!-- Video Placeholder -->
-            <div class="video-wrapper">
-                <div class="video-placeholder">
-                    <div style="font-size: 4rem; margin-bottom: 1rem;">🎬</div>
-                    <p>Vidéo de démonstration</p>
-                    <p style="font-size: 0.9rem; color: var(--gray);">
-                        Pour ajouter votre vidéo YouTube, remplacez VIDEO_ID dans le code
-                    </p>
-                    
-                    <!-- YouTube Video (uncomment when you have a video ID) -->
-                    <!-- 
-                    <iframe width="100%" height="400" 
-                        src="https://www.youtube.com/embed/VIDEO_ID" 
-                        title="Parla Demo" frameborder="0" allowfullscreen>
-                    </iframe>
-                    -->
-                </div>
-            </div>
+    <!-- Problem -->
+    <section class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-3xl text-center">
+        <p class="text-sm font-bold uppercase tracking-[0.18em] text-brand-700">Le vrai problème</p>
+        <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
+          Vous perdez des commandes quand vous ne répondez pas assez vite
+        </h2>
+        <p class="mt-5 text-lg leading-8 text-slate-600">
+          Beaucoup de restaurants répondent encore manuellement aux mêmes messages toute la journée.
+          Résultat : fatigue, délais de réponse, clients perdus et service irrégulier.
+        </p>
+      </div>
 
-            <!-- Test Button -->
-            <div class="demo-cta">
-                <h3>Prêt à essayer?</h3>
-                <p>Testez Parla directement sur WhatsApp en 30 secondes</p>
-                <button class="btn-demo-whatsapp" onclick="window.open('https://wa.me/221774952105?text=Salut%20Parla!%20Je%20veux%20tester%20votre%20chatbot%20WhatsApp', '_blank')">
-                    💬 Tester maintenant sur WhatsApp
-                </button>
-                <p style="font-size: 0.85rem; color: var(--gray); margin-top: 1rem;">
-                    Pas de compte nécessaire. Aucun engagement.
-                </p>
-            </div>
+      <div class="mt-12 grid gap-6 md:grid-cols-3">
+        <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-soft">
+          <div class="text-3xl">📋</div>
+          <h3 class="mt-4 text-xl font-bold text-slate-900">On vous demande le menu sans arrêt</h3>
+          <p class="mt-3 text-slate-600">
+            “Envoyez le menu”, “C’est combien ?”, “Vous livrez ?” : les mêmes questions reviennent en boucle.
+          </p>
         </div>
+
+        <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-soft">
+          <div class="text-3xl">⏳</div>
+          <h3 class="mt-4 text-xl font-bold text-slate-900">Les clients n’aiment pas attendre</h3>
+          <p class="mt-3 text-slate-600">
+            Si vous répondez trop tard, une partie des clients passe simplement à un autre restaurant.
+          </p>
+        </div>
+
+        <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-soft">
+          <div class="text-3xl">📱</div>
+          <h3 class="mt-4 text-xl font-bold text-slate-900">Votre téléphone vous coupe dans tout</h3>
+          <p class="mt-3 text-slate-600">
+            Cuisine, service, livraison, caisse : répondre à chaque message ralentit votre équipe au lieu de l’aider.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <!-- Problem Section -->
-    <section class="problem">
-        <div class="section-header">
-            <div class="section-label">La réalité pour 80% des PME africaines</div>
-            <h2>Vous perdez des clients sans le savoir</h2>
-            <p>Les entrepreneurs comme vous sont débordés par les messages WhatsApp. Support insuffisant. Clients frustrés. Ventes perdues.</p>
+    <!-- How it works -->
+    <section id="fonctionnement" class="bg-slate-50 py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center">
+          <p class="text-sm font-bold uppercase tracking-[0.18em] text-brand-700">Fonctionnement</p>
+          <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
+            Parla répond, qualifie et passe la main quand il le faut
+          </h2>
+          <p class="mt-5 text-lg leading-8 text-slate-600">
+            Le but n’est pas de remplacer totalement votre équipe, mais de traiter automatiquement les demandes répétitives
+            pour que vous vous concentriez sur les vraies commandes.
+          </p>
         </div>
-        <div class="problems-grid">
-            <div class="problem-card">
-                <div class="problem-icon">😴</div>
-                <h3>Clients écrivent la nuit</h3>
-                <p>Personne ne répond avant demain. Vos clients vont chez la concurrence. Pertes de ventes invisibles.</p>
-            </div>
-            <div class="problem-card">
-                <div class="problem-icon">🔄</div>
-                <h3>Mêmes questions répétées</h3>
-                <p>"C'est combien ?" "Vous êtes ouverts ?" — des dizaines de fois par jour. Vous êtes un bot humain frustré.</p>
-            </div>
-            <div class="problem-card">
-                <div class="problem-icon">📱</div>
-                <h3>Téléphone qui sonne sans arrêt</h3>
-                <p>Impossible de vous concentrer. Vous êtes débordé. La qualité du service se dégrade. Vos clients attendent 2h pour une réponse.</p>
-            </div>
+
+        <div class="mt-14 grid gap-6 lg:grid-cols-3">
+          <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-soft">
+            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-500/15 font-extrabold text-brand-700">1</div>
+            <h3 class="mt-5 text-xl font-bold text-slate-900">Le client écrit sur WhatsApp</h3>
+            <p class="mt-3 text-slate-600">
+              Il demande le menu, les prix, les horaires, la livraison ou veut commander directement.
+            </p>
+          </div>
+
+          <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-soft">
+            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-500/15 font-extrabold text-brand-700">2</div>
+            <h3 class="mt-5 text-xl font-bold text-slate-900">Parla répond immédiatement</h3>
+            <p class="mt-3 text-slate-600">
+              Il envoie les bonnes informations, pose les bonnes questions et récupère les détails utiles.
+            </p>
+          </div>
+
+          <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-soft">
+            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-500/15 font-extrabold text-brand-700">3</div>
+            <h3 class="mt-5 text-xl font-bold text-slate-900">Votre équipe reprend si nécessaire</h3>
+            <p class="mt-3 text-slate-600">
+              Pour les demandes importantes, Parla peut transférer le client à un humain au lieu de bloquer la conversation.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Solution Section -->
-    <section class="solution" id="solution">
-        <div class="section-header" style="margin-bottom: 3rem;">
-            <div class="section-label">La solution</div>
-            <h2>Parla automatise votre service client WhatsApp</h2>
-        </div>
-        <div class="solution-content">
-            <div class="solution-text">
-                <h2>Un assistant IA qui parle votre langue</h2>
-                <p>Français natif + langue locale (Wolof, Lingala, Fula). 24 heures par jour. Zéro apprentissage technique. Résultats vérifiables.</p>
-                <div class="features-list">
-                    <div class="feature-item">
-                        <div class="feature-icon">⚡</div>
-                        <div>
-                            <h3>Réponses instantanées</h3>
-                            <p>Moins de 3 secondes. Prix, horaires, adresse, disponibilités. Vos clients ont réponse immédiatement.</p>
-                        </div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">📅</div>
-                        <div>
-                            <h3>Réservations automatiques</h3>
-                            <p>Vos clients réservent seuls via WhatsApp. Sans vous déranger. Confirmations instantanées.</p>
-                        </div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">🗣️</div>
-                        <div>
-                            <h3>Langue locale intégrée</h3>
-                            <p>Parla comprend wolof, lingala, fula. Pas juste français. Vos clients se sentent compris. Confiance établie.</p>
-                        </div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">🛍️</div>
-                        <div>
-                            <h3>Commandes + Suivi</h3>
-                            <p>Clients commandent directement. Suivi automatique. Notifications de livraison. Zéro friction.</p>
-                        </div>
-                    </div>
-                </div>
+    <!-- Benefits -->
+    <section id="benefices" class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+      <div class="grid gap-12 lg:grid-cols-2 lg:items-start">
+        <div>
+          <p class="text-sm font-bold uppercase tracking-[0.18em] text-brand-700">Ce que Parla gère</p>
+          <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
+            Les demandes les plus fréquentes d’un restaurant
+          </h2>
+          <p class="mt-5 text-lg leading-8 text-slate-600">
+            Parla est pensé pour les restaurants, fast-foods et traiteurs qui reçoivent beaucoup de messages WhatsApp
+            chaque jour.
+          </p>
+
+          <div class="mt-8 space-y-4">
+            <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-soft">
+              <h3 class="text-lg font-bold text-slate-900">🍽️ Envoi automatique du menu</h3>
+              <p class="mt-2 text-slate-600">Le client reçoit les plats, les prix et les options sans attendre.</p>
             </div>
-            <div class="solution-visual">
-                <div class="hero-visual-box" style="height: 100%; min-height: 400px;">
-                    <div style="text-align: center; padding: 2rem; color: var(--gray);">
-                        <div style="font-size: 3rem; margin-bottom: 1rem;">💬</div>
-                        <p>Démonstration complète lors du premier appel</p>
-                    </div>
-                </div>
+
+            <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-soft">
+              <h3 class="text-lg font-bold text-slate-900">🚚 Questions sur la livraison</h3>
+              <p class="mt-2 text-slate-600">Quartier, disponibilité, horaires, conditions : les réponses partent automatiquement.</p>
             </div>
+
+            <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-soft">
+              <h3 class="text-lg font-bold text-slate-900">🧾 Pré-prise de commande</h3>
+              <p class="mt-2 text-slate-600">Parla peut demander le plat, la quantité et le quartier avant validation finale par l’équipe.</p>
+            </div>
+
+            <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-soft">
+              <h3 class="text-lg font-bold text-slate-900">👨‍🍳 Passage à un humain</h3>
+              <p class="mt-2 text-slate-600">Votre équipe garde la main sur les cas sensibles, les ruptures ou les demandes spécifiques.</p>
+            </div>
+          </div>
         </div>
+
+        <div class="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-soft">
+          <p class="text-sm font-bold uppercase tracking-[0.18em] text-brand-700">Démo WhatsApp en 30 secondes</p>
+          <h3 class="mt-3 text-2xl font-extrabold text-slate-900">Ce que voit le restaurateur</h3>
+          <p class="mt-4 text-slate-600">
+            Une démo simple vaut souvent mieux qu’un long discours. C’est la meilleure manière d’expliquer le service.
+          </p>
+
+          <div class="mt-8 space-y-4 rounded-3xl bg-slate-50 p-6">
+            <div class="rounded-2xl bg-white px-4 py-3 text-sm text-slate-700 shadow">
+              Client : “Vous livrez à Ouakam ?”
+            </div>
+            <div class="rounded-2xl bg-brand-500 px-4 py-3 text-sm font-medium text-slate-900 shadow">
+              Oui 👋 Nous livrons à Ouakam aujourd’hui. Souhaitez-vous voir le menu ou commander directement ?
+            </div>
+            <div class="rounded-2xl bg-white px-4 py-3 text-sm text-slate-700 shadow">
+              Client : “Envoyez le menu”
+            </div>
+            <div class="rounded-2xl bg-brand-500 px-4 py-3 text-sm font-medium text-slate-900 shadow">
+              Voici notre menu du jour :
+              <br>• Poulet braisé – 3 500 CFA
+              <br>• Yassa poulet – 3 000 CFA
+              <br>• Sandwich – 2 000 CFA
+            </div>
+          </div>
+
+          <a
+            href="https://wa.me/221774952105?text=Bonjour%20Parla%2C%20je%20veux%20voir%20la%20d%C3%A9mo%20restaurant"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-8 inline-flex w-full items-center justify-center rounded-xl bg-slate-900 px-6 py-3.5 text-base font-bold text-white transition hover:bg-slate-800"
+          >
+            Voir la démo sur WhatsApp
+          </a>
+        </div>
+      </div>
     </section>
 
     <!-- Testimonials -->
-    <section class="testimonials" id="testimonials">
-        <div class="section-header">
-            <div class="section-label">Ce qu'en disent nos clients</div>
-            <h2>+300 PME africaines nous font confiance</h2>
+    <section class="bg-slate-50 py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center">
+          <p class="text-sm font-bold uppercase tracking-[0.18em] text-brand-700">Retours clients</p>
+          <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
+            Un service simple à comprendre pour les restaurateurs
+          </h2>
+          <p class="mt-5 text-lg leading-8 text-slate-600">
+            Ici, le plus important est la clarté : montrer ce que Parla fait, et surtout ce qu’il ne prétend pas faire.
+          </p>
         </div>
-        <div class="testimonials-grid">
-            <div class="testimonial-card">
-                <div class="stars">★★★★★</div>
-                <p class="testimonial-text">"En 7 jours, j'avais 40% plus de réservations. Parla qualifie les leads avant que je ne les voie. C'est un game-changer."</p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">MA</div>
-                    <div class="author-info">
-                        <h4>Mariam Ahmed</h4>
-                        <p>Restaurant, Dakar</p>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <div class="stars">★★★★★</div>
-                <p class="testimonial-text">"Je passais 4h/jour sur les messages. Maintenant 30 minutes. Et mes clients sont plus heureux parce qu'ils ont réponse immédiate."</p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">BA</div>
-                    <div class="author-info">
-                        <h4>Badara Seck</h4>
-                        <p>Boutique, Kaolack</p>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <div class="stars">★★★★★</div>
-                <p class="testimonial-text">"Je pensais que c'était compliqué. Le support a tout configuré en 2 jours. Zéro problème. Très recommandé!"</p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">SY</div>
-                    <div class="author-info">
-                        <h4>Souleymane Y.</h4>
-                        <p>Agence événementielle, Thiès</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Use Cases -->
-    <section class="usecases">
-        <div class="section-header">
-            <div class="section-label">Parfait pour</div>
-            <h2>Tous les types de business</h2>
+        <div class="mt-12 grid gap-6 md:grid-cols-3">
+          <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-soft">
+            <p class="text-yellow-500">★★★★★</p>
+            <p class="mt-4 text-slate-600">
+              “Le plus utile pour nous, c’est l’envoi automatique du menu. On perd moins de temps sur les mêmes questions.”
+            </p>
+            <div class="mt-6">
+              <p class="font-bold text-slate-900">A. Ndiaye</p>
+              <p class="text-sm text-slate-500">Restaurant, Dakar</p>
+            </div>
+          </div>
+
+          <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-soft">
+            <p class="text-yellow-500">★★★★★</p>
+            <p class="mt-4 text-slate-600">
+              “On voulait quelque chose de simple. L’installation s’est faite à distance et on a gardé la main sur les demandes importantes.”
+            </p>
+            <div class="mt-6">
+              <p class="font-bold text-slate-900">M. Sarr</p>
+              <p class="text-sm text-slate-500">Fast-food, Dakar</p>
+            </div>
+          </div>
+
+          <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-soft">
+            <p class="text-yellow-500">★★★★★</p>
+            <p class="mt-4 text-slate-600">
+              “Le bot ne remplace pas l’équipe, mais il nous enlève une grosse partie des réponses répétitives.”
+            </p>
+            <div class="mt-6">
+              <p class="font-bold text-slate-900">K. Diouf</p>
+              <p class="text-sm text-slate-500">Traiteur, Dakar</p>
+            </div>
+          </div>
         </div>
-        <div class="usecases-grid">
-            <div class="usecase-card">
-                <div class="usecase-icon">🍽️</div>
-                <h3>Restaurants & Cafés</h3>
-                <p>Réservations automatiques. Confirmations. Modifications de tables.</p>
-                <a href="#" class="usecase-link">Voir le cas →</a>
-            </div>
-            <div class="usecase-card">
-                <div class="usecase-icon">🛍️</div>
-                <h3>Boutiques & Retail</h3>
-                <p>Catalogue de produits. Disponibilité stock. Commandes en ligne.</p>
-                <a href="#" class="usecase-link">Voir le cas →</a>
-            </div>
-            <div class="usecase-card">
-                <div class="usecase-icon">🎨</div>
-                <h3>Agences & Services</h3>
-                <p>Leads qualification. Prise de RDV. Devis automatisés.</p>
-                <a href="#" class="usecase-link">Voir le cas →</a>
-            </div>
-            <div class="usecase-card">
-                <div class="usecase-icon">💇‍♀️</div>
-                <h3>Salons & Wellness</h3>
-                <p>Rendez-vous clients. Rappels. Feedback post-service.</p>
-                <a href="#" class="usecase-link">Voir le cas →</a>
-            </div>
-        </div>
+      </div>
     </section>
 
     <!-- Pricing -->
-    <section class="pricing" id="pricing">
-        <div class="section-header">
-            <div class="section-label">Nos offres</div>
-            <h2>Tarification transparente pour l'Afrique</h2>
-            <p>Démarrez small. Passez à l'échelle sans surprise. Aucun coût caché.</p>
-        </div>
-        <div class="pricing-container">
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <div class="pricing-icon">🎯</div>
-                    <h3>STARTER</h3>
-                    <div class="pricing-price">30<span class="pricing-currency">K CFA</span></div>
-                    <p class="pricing-period">par mois</p>
-                    <ul class="pricing-features">
-                        <li>5 réponses automatiques</li>
-                        <li>Horaires & localisation</li>
-                        <li>Installation incluse</li>
-                        <li>Support par email</li>
-                    </ul>
-                    <button class="pricing-btn" onclick="scrollToSection('final-cta')">Commencer</button>
-                </div>
+    <section id="tarifs" class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-3xl text-center">
+        <p class="text-sm font-bold uppercase tracking-[0.18em] text-brand-700">Tarifs</p>
+        <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
+          Des offres pensées pour les restaurants
+        </h2>
+        <p class="mt-5 text-lg leading-8 text-slate-600">
+          Tu peux ajuster ces prix plus tard. Pour l’instant, l’important est d’avoir une offre lisible et cohérente.
+        </p>
+      </div>
 
-                <div class="pricing-card featured">
-                    <div class="pricing-badge">⭐ RECOMMANDÉ</div>
-                    <div class="pricing-icon">🚀</div>
-                    <h3>BUSINESS</h3>
-                    <div class="pricing-price">60<span class="pricing-currency">K CFA</span></div>
-                    <p class="pricing-period">par mois</p>
-                    <ul class="pricing-features">
-                        <li>Chatbot illimité</li>
-                        <li>Réservations automatiques</li>
-                        <li>Suivi clients</li>
-                        <li>Rapport mensuel</li>
-                        <li>Support prioritaire WhatsApp</li>
-                    </ul>
-                    <button class="pricing-btn" onclick="scrollToSection('final-cta')">Démarrer maintenant</button>
-                    <div class="pricing-note">Frais installation: 25K CFA (une seule fois)</div>
-                </div>
+      <div class="mt-12 grid gap-6 lg:grid-cols-3">
+        <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-soft">
+          <p class="text-sm font-bold uppercase tracking-wider text-slate-500">Starter</p>
+          <p class="mt-4 text-4xl font-extrabold text-slate-900">29K <span class="text-base font-semibold text-slate-500">CFA/mois</span></p>
+          <p class="mt-4 text-slate-600">Pour répondre automatiquement aux demandes les plus fréquentes.</p>
 
-                <div class="pricing-card">
-                    <div class="pricing-icon">👑</div>
-                    <h3>PREMIUM</h3>
-                    <div class="pricing-price">90<span class="pricing-currency">K CFA</span></div>
-                    <p class="pricing-period">par mois</p>
-                    <ul class="pricing-features">
-                        <li>Tout Business inclus</li>
-                        <li>Chatbot en langue locale native</li>
-                        <li>Formation équipe</li>
-                        <li>Personnalisation avancée</li>
-                        <li>Gestionnaire dédié</li>
-                    </ul>
-                    <button class="pricing-btn" onclick="scrollToSection('final-cta')">Contacter nous</button>
-                </div>
-            </div>
+          <ul class="mt-8 space-y-3 text-sm text-slate-700">
+            <li>✓ Réponses instantanées</li>
+            <li>✓ Menu, horaires, adresse, livraison</li>
+            <li>✓ Transfert à un humain</li>
+            <li>✓ Support WhatsApp</li>
+          </ul>
+
+          <p class="mt-6 text-sm text-slate-500">Mise en place : 25K CFA une seule fois</p>
+
+          <a
+            href="https://wa.me/221774952105?text=Bonjour%20Parla%2C%20je%20veux%20l%27offre%20Starter"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-8 inline-flex w-full items-center justify-center rounded-xl border border-slate-300 px-5 py-3.5 text-base font-semibold text-slate-800 transition hover:bg-slate-50"
+          >
+            Choisir Starter
+          </a>
         </div>
+
+        <div class="relative rounded-3xl border-2 border-brand-500 bg-white p-8 shadow-brand">
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-brand-500 px-4 py-1 text-xs font-extrabold uppercase tracking-wider text-slate-900">
+            Recommandé
+          </div>
+          <p class="text-sm font-bold uppercase tracking-wider text-slate-500">Pro</p>
+          <p class="mt-4 text-4xl font-extrabold text-slate-900">49K <span class="text-base font-semibold text-slate-500">CFA/mois</span></p>
+          <p class="mt-4 text-slate-600">Pour les restaurants qui veulent aller plus loin que la simple réponse automatique.</p>
+
+          <ul class="mt-8 space-y-3 text-sm text-slate-700">
+            <li>✓ Tout Starter</li>
+            <li>✓ Pré-prise de commande</li>
+            <li>✓ Collecte du quartier et du téléphone</li>
+            <li>✓ Résumé automatique pour votre équipe</li>
+            <li>✓ Support prioritaire WhatsApp</li>
+          </ul>
+
+          <p class="mt-6 text-sm text-slate-500">Mise en place : 25K CFA une seule fois</p>
+
+          <a
+            href="https://wa.me/221774952105?text=Bonjour%20Parla%2C%20je%20veux%20l%27offre%20Pro"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-8 inline-flex w-full items-center justify-center rounded-xl bg-brand-500 px-5 py-3.5 text-base font-bold text-slate-900 transition hover:bg-brand-600"
+          >
+            Choisir Pro
+          </a>
+        </div>
+
+        <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-soft">
+          <p class="text-sm font-bold uppercase tracking-wider text-slate-500">Business</p>
+          <p class="mt-4 text-4xl font-extrabold text-slate-900">89K <span class="text-base font-semibold text-slate-500">CFA/mois</span></p>
+          <p class="mt-4 text-slate-600">Pour les structures qui veulent un accompagnement plus poussé.</p>
+
+          <ul class="mt-8 space-y-3 text-sm text-slate-700">
+            <li>✓ Tout Pro</li>
+            <li>✓ Relances simples</li>
+            <li>✓ Messages promotionnels encadrés</li>
+            <li>✓ Ajustements mensuels</li>
+            <li>✓ Accompagnement dédié</li>
+          </ul>
+
+          <p class="mt-6 text-sm text-slate-500">Mise en place : 25K CFA une seule fois</p>
+
+          <a
+            href="https://wa.me/221774952105?text=Bonjour%20Parla%2C%20je%20veux%20l%27offre%20Business"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-8 inline-flex w-full items-center justify-center rounded-xl border border-slate-300 px-5 py-3.5 text-base font-semibold text-slate-800 transition hover:bg-slate-50"
+          >
+            Choisir Business
+          </a>
+        </div>
+      </div>
     </section>
 
     <!-- FAQ -->
-    <section class="faq" id="faq">
-        <div class="section-header">
-            <div class="section-label">Questions fréquentes</div>
-            <h2>Tout ce que vous devez savoir</h2>
+    <section id="faq" class="bg-slate-50 py-20">
+      <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center">
+          <p class="text-sm font-bold uppercase tracking-[0.18em] text-brand-700">FAQ</p>
+          <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
+            Questions fréquentes
+          </h2>
         </div>
-        <div class="faq-container">
-            <div class="faq-items">
-                <div class="faq-item">
-                    <button class="faq-trigger">
-                        <span>Combien de temps pour mettre en place?</span>
-                        <span class="faq-arrow">▼</span>
-                    </button>
-                    <div class="faq-content">
-                        <p>48 heures maximum. Notre équipe configure tout: connexion WhatsApp, réponses automatiques, réservations, paiements. Vous n'avez rien à faire. Déploiement complet le jour 2.</p>
-                    </div>
-                </div>
 
-                <div class="faq-item">
-                    <button class="faq-trigger">
-                        <span>Faut-il des connaissances techniques?</span>
-                        <span class="faq-arrow">▼</span>
-                    </button>
-                    <div class="faq-content">
-                        <p>Non. Zéro. Pas de code. Pas de configuration complexe. Vous donnez juste les infos (prix, horaires, services). Nous construisons le chatbot. Vous commencez à gagner des clients.</p>
-                    </div>
-                </div>
+        <div class="mt-12 space-y-4">
+          <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+            <summary class="cursor-pointer list-none text-lg font-bold text-slate-900">
+              Combien de temps faut-il pour mettre Parla en place ?
+            </summary>
+            <p class="mt-3 text-slate-600">
+              Dans un cas standard, l’installation à distance prend entre 24 et 48 heures selon votre menu, vos réponses
+              et vos besoins.
+            </p>
+          </details>
 
-                <div class="faq-item">
-                    <button class="faq-trigger">
-                        <span>Mes données sont sécurisées?</span>
-                        <span class="faq-arrow">▼</span>
-                    </button>
-                    <div class="faq-content">
-                        <p>Oui. Certifications ISO 27001. Conforme RGPD. Chiffrement end-to-end. Vos données client ne quittent jamais WhatsApp. Zéro risque. Audits de sécurité réguliers.</p>
-                    </div>
-                </div>
+          <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+            <summary class="cursor-pointer list-none text-lg font-bold text-slate-900">
+              Faut-il des compétences techniques ?
+            </summary>
+            <p class="mt-3 text-slate-600">
+              Non. Vous fournissez les informations utiles sur votre restaurant, et la configuration se fait pour vous.
+            </p>
+          </details>
 
-                <div class="faq-item">
-                    <button class="faq-trigger">
-                        <span>Et si ça ne marche pas pour moi?</span>
-                        <span class="faq-arrow">▼</span>
-                    </button>
-                    <div class="faq-content">
-                        <p>Garantie 30 jours. Si vous n'êtes pas satisfait, remboursement 100%. Aucune question. Mais 98% de nos clients voient des résultats dès la première semaine.</p>
-                    </div>
-                </div>
+          <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+            <summary class="cursor-pointer list-none text-lg font-bold text-slate-900">
+              Est-ce que Parla remplace totalement mon équipe ?
+            </summary>
+            <p class="mt-3 text-slate-600">
+              Non. Parla traite les questions répétitives et simples. Les demandes particulières ou sensibles peuvent être
+              transférées à un humain.
+            </p>
+          </details>
 
-                <div class="faq-item">
-                    <button class="faq-trigger">
-                        <span>Quel support pendant l'utilisation?</span>
-                        <span class="faq-arrow">▼</span>
-                    </button>
-                    <div class="faq-content">
-                        <p>Support via WhatsApp (BUSINESS et PREMIUM), email, et documentation complète. Pour PREMIUM, vous avez un gestionnaire dédié qui optimise votre chatbot chaque mois.</p>
-                    </div>
-                </div>
-            </div>
+          <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+            <summary class="cursor-pointer list-none text-lg font-bold text-slate-900">
+              Est-ce que l’installation peut se faire à distance ?
+            </summary>
+            <p class="mt-3 text-slate-600">
+              Oui. Le service peut être mis en place à distance avec un échange WhatsApp, un appel ou une assistance guidée.
+            </p>
+          </details>
+
+          <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+            <summary class="cursor-pointer list-none text-lg font-bold text-slate-900">
+              Puis-je tester avant de m’engager ?
+            </summary>
+            <p class="mt-3 text-slate-600">
+              Oui. Le plus simple est de demander une démonstration sur WhatsApp pour voir concrètement le fonctionnement.
+            </p>
+          </details>
         </div>
+      </div>
     </section>
 
-    <!-- Final CTA -->
-    <section class="final-cta" id="final-cta">
-        <div class="final-cta-content">
-            <h2>Pas de risque. Résultats garantis.</h2>
-            <p>Essai gratuit 7 jours. Accès complet à la plateforme. Support humain inclus. Zéro engagement.</p>
-            <div class="final-cta-buttons">
-                <button class="btn-white" onclick="window.open('https://wa.me/221774952105?text=Salut%20Parla!%20Je%20veux%20essayer%20votre%20chatbot%20WhatsApp', '_blank')">💬 Parler à Parla sur WhatsApp</button>
-                <button class="btn-white" onclick="scrollToSection('pricing')">Voir les plans</button>
-            </div>
+    <!-- CTA -->
+    <section class="py-20">
+      <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div class="overflow-hidden rounded-[2rem] bg-slate-900 px-6 py-12 text-center text-white sm:px-10 lg:px-16">
+          <p class="text-sm font-bold uppercase tracking-[0.18em] text-brand-500">Prêt à tester ?</p>
+          <h2 class="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">
+            Montre-moi ton WhatsApp restaurant, je te montre ce que Parla peut faire
+          </h2>
+          <p class="mx-auto mt-5 max-w-2xl text-lg leading-8 text-slate-300">
+            Le moyen le plus simple de convaincre un restaurateur, c’est une démonstration courte et concrète.
+          </p>
+
+          <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+            <a
+              href="https://wa.me/221774952105?text=Bonjour%20Parla%2C%20je%20veux%20une%20d%C3%A9mo%20restaurant"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center rounded-xl bg-brand-500 px-6 py-3.5 text-base font-bold text-slate-900 transition hover:bg-brand-600"
+            >
+              💬 Demander une démo WhatsApp
+            </a>
+
+            <a
+              href="#tarifs"
+              class="inline-flex items-center justify-center rounded-xl border border-slate-600 px-6 py-3.5 text-base font-semibold text-white transition hover:bg-slate-800"
+            >
+              Voir les tarifs
+            </a>
+          </div>
         </div>
+      </div>
     </section>
+  </main>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-col">
-                <h4>Parla</h4>
-                <p style="font-size: 0.9rem; color: var(--gray);">La plateforme WhatsApp IA pour l'Afrique. Qui parle votre langue.</p>
-            </div>
-            <div class="footer-col">
-                <h4>Produit</h4>
-                <a href="#solution">Solution</a>
-                <a href="#pricing">Tarifs</a>
-                <a href="#faq">FAQ</a>
-                <a href="#">Documentation</a>
-            </div>
-            <div class="footer-col">
-                <h4>Entreprise</h4>
-                <a href="#">À propos</a>
-                <a href="#">Blog</a>
-                <a href="#">Recrutement</a>
-                <a href="#">Contact</a>
-            </div>
-            <div class="footer-col">
-                <h4>Légal</h4>
-                <a href="#">Conditions d'utilisation</a>
-                <a href="#">Politique de confidentialité</a>
-                <a href="#">Cookies</a>
-                <a href="#">RGPD</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>🌍 Parla - Plateforme pan-africaine | © 2025 Parla. Tous droits réservés. | <a href="/privacy.html" style="color: var(--gray); text-decoration: none;">Politique de confidentialité</a> | <a href="/terms.html" style="color: var(--gray); text-decoration: none;">Conditions d'utilisation</a></p>
-        </div>
-    </footer>
+  <footer class="border-t border-slate-200 bg-white">
+    <div class="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
+      <div>
+        <h3 class="text-lg font-extrabold text-slate-900">Parla</h3>
+        <p class="mt-3 text-sm leading-7 text-slate-600">
+          Assistant WhatsApp pour restaurants : menu, prix, livraison, commandes et transfert à un humain.
+        </p>
+      </div>
 
-    <script>
-        // Smooth scroll navigation
-        function scrollToSection(id) {
-            const element = document.getElementById(id);
-            if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
-            }
+      <div>
+        <h4 class="text-sm font-bold uppercase tracking-wider text-slate-900">Produit</h4>
+        <ul class="mt-4 space-y-3 text-sm text-slate-600">
+          <li><a href="#fonctionnement" class="hover:text-slate-900">Fonctionnement</a></li>
+          <li><a href="#benefices" class="hover:text-slate-900">Bénéfices</a></li>
+          <li><a href="#tarifs" class="hover:text-slate-900">Tarifs</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-sm font-bold uppercase tracking-wider text-slate-900">Ressources</h4>
+        <ul class="mt-4 space-y-3 text-sm text-slate-600">
+          <li><a href="#faq" class="hover:text-slate-900">FAQ</a></li>
+          <li><a href="https://wa.me/221774952105" target="_blank" rel="noopener noreferrer" class="hover:text-slate-900">WhatsApp</a></li>
+          <li><a href="#" class="hover:text-slate-900">Politique de confidentialité</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-sm font-bold uppercase tracking-wider text-slate-900">Contact</h4>
+        <ul class="mt-4 space-y-3 text-sm text-slate-600">
+          <li>Dakar, Sénégal</li>
+          <li><a href="https://wa.me/221774952105" target="_blank" rel="noopener noreferrer" class="hover:text-slate-900">+221 77 495 21 05</a></li>
+          <li><a href="mailto:contact@parla.africa" class="hover:text-slate-900">contact@parla.africa</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-slate-200 px-4 py-6 text-center text-sm text-slate-500 sm:px-6 lg:px-8">
+      © 2026 Parla. Tous droits réservés.
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll for internal anchors
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href');
+        if (targetId.length > 1) {
+          const target = document.querySelector(targetId);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
         }
-
-        // FAQ Toggle
-        document.querySelectorAll('.faq-trigger').forEach(trigger => {
-            trigger.addEventListener('click', function() {
-                const item = this.parentElement;
-                item.classList.toggle('active');
-            });
-        });
-
-        // Header scroll effect
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('header');
-            if (window.scrollY > 50) {
-                header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
-            } else {
-                header.style.boxShadow = 'none';
-            }
-        });
-
-        // GA4 Analytics (à configurer)
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        // gtag('config', 'G-XXXXXXXXXX'); // À remplacer
-
-        // Tracking conversions
-        document.querySelectorAll('.btn-primary, .btn-white, .pricing-btn, .cta-button').forEach(btn => {
-            btn.addEventListener('click', function() {
-                gtag('event', 'conversion', {
-                    'event_category': 'engagement',
-                    'event_label': 'button_click'
-                });
-            });
-        });
-    </script>
+      });
+    });
+  </script>
 </body>
 </html>
